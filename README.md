@@ -7,7 +7,7 @@ Personal academic website of Francesco Picella. Plain HTML + CSS, no build step,
   - Add a news item: copy an `<li>` in `<ul class="news">`.
   - Add a paper: copy an `<li>` in `<ol class="pubs">` (newest first).
 - `assets/style.css` — styles. Palette: set `data-palette="ink|slate|sepia"` on `<html>` in `index.html` (default: ink).
-- `assets/photo.jpg` — portrait (square, ≥ 400 px). `assets/gmc2026.gif` — conference image shown in News.
+- `assets/photo.jpg` — portrait (square, ≥ 400 px). `assets/jmc2026.gif` — conference image shown in News.
 - `cv/` — CV page; drop `cv-picella.pdf` there.
 - Update `lastmod` in `sitemap.xml` and the footer date when you change content.
 
