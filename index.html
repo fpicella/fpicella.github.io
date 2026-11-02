@@ -3,17 +3,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Francesco Picella — Fluid mechanics, Sorbonne Université</title>
-<meta name="description" content="Francesco Picella, Maître de Conférences in fluid mechanics at Institut Jean Le Rond ∂'Alembert, Sorbonne Université (Paris). Hydrodynamic instabilities, active fluids, biophysics, transition to turbulence.">
+<title>Francesco Picella</title>
+<meta name="description" content="Francesco Picella's personal website — Maître de Conférences in fluid mechanics at Institut Jean Le Rond ∂'Alembert, Sorbonne Université, Paris. Hydrodynamic instabilities, active fluids, biophysics, transition to turbulence.">
 <meta name="author" content="Francesco Picella">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0f1115">
 <link rel="canonical" href="https://fpicella.github.io/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Francesco Picella — Fluid mechanics, Sorbonne Université">
-<meta property="og:description" content="Maître de Conférences in fluid mechanics at Institut ∂'Alembert, Sorbonne Université. Instabilities, active fluids, biophysics, transition.">
+<meta property="og:title" content="Francesco Picella">
+<meta property="og:description" content="Fluid mechanics · Institut ∂'Alembert, Sorbonne Université. Instabilities, active fluids, biophysics, transition.">
 <meta property="og:url" content="https://fpicella.github.io/">
-<meta property="og:image" content="https://fpicella.github.io/assets/photo.jpg">
+<meta property="og:image" content="https://fpicella.github.io/assets/img/portrait.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">
 {
@@ -24,28 +27,17 @@
   "familyName": "Picella",
   "jobTitle": "Maître de Conférences (Associate Professor) in Fluid Mechanics",
   "url": "https://fpicella.github.io/",
-  "image": "https://fpicella.github.io/assets/photo.jpg",
+  "image": "https://fpicella.github.io/assets/img/portrait.jpg",
   "email": "mailto:francesco.picella@sorbonne-universite.fr",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Institut Jean Le Rond ∂'Alembert, Sorbonne Université / CNRS",
-    "url": "https://www.dalembert.upmc.fr/"
-  },
+  "worksFor": { "@type": "Organization", "name": "Institut Jean Le Rond ∂'Alembert, Sorbonne Université / CNRS", "url": "https://www.dalembert.upmc.fr/" },
   "affiliation": { "@type": "CollegeOrUniversity", "name": "Sorbonne Université" },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "4 place Jussieu, Tour 55-65, bureau 520",
-    "postalCode": "75005",
-    "addressLocality": "Paris",
-    "addressCountry": "FR"
-  },
-  "knowsAbout": ["fluid mechanics", "hydrodynamic stability", "transition to turbulence", "active fluids", "biophysics", "microswimmers", "superhydrophobic surfaces", "numerical simulation"],
+  "address": { "@type": "PostalAddress", "streetAddress": "4 place Jussieu, Tour 55-65, bureau 520", "postalCode": "75005", "addressLocality": "Paris", "addressCountry": "FR" },
+  "knowsAbout": ["fluid mechanics", "hydrodynamic stability", "transition to turbulence", "active fluids", "biophysics", "microswimmers", "bioconvection", "superhydrophobic surfaces", "numerical simulation"],
   "sameAs": [
     "https://scholar.google.com/citations?user=0s_pUN8AAAAJ",
     "https://www.researchgate.net/profile/Picella-Francesco",
     "https://dblp.org/pid/242/9693.html",
     "https://github.com/fpicella",
-    "https://www.dalembert.upmc.fr/home/picella/",
     "https://sites.google.com/view/francescopicella"
   ]
 }
@@ -53,126 +45,259 @@
 </head>
 <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <a class="name" href="#top">Francesco Picella</a>
-    <nav aria-label="Sections">
-      <a href="#about">About</a>
-      <a href="#news">News</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header id="top" class="hero wrap">
+  <a class="portrait" href="#top" aria-label="Home">
+    <img src="assets/img/portrait.jpg" alt="Francesco Picella" width="220" height="220" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'portrait-fallback',textContent:'FP'}))">
+  </a>
+  <div class="hero-text">
+    <h1>Francesco Picella</h1>
+    <p class="affil">
+      <span class="logo-slot"><img src="assets/img/logo-dalembert.png" alt="" height="28" onerror="this.remove()"></span>
+      Maître de Conférences · Fluid mechanics<br>
+      <a href="https://www.dalembert.upmc.fr/">Institut Jean Le Rond ∂'Alembert</a>, Sorbonne Université / CNRS, Paris
+    </p>
+    <p class="intro">I study how flows <b>lose their symmetry and become complex</b>. My work couples hydrodynamics with complex interfaces (biomimetic, deformable, slippery) and with chemical or electrical fields, using <b>direct numerical simulation</b>, mathematical modelling and <b>global linear stability analysis</b> to follow transitions from the first symmetry breaking up to chaotic dynamics. Current interests: <b>active fluids and microswimmers</b>, <b>bio-active suspensions</b>, <b>laminar–turbulent transition</b>, fluid–structure interaction.</p>
+    <p class="iconlinks">
+      <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>
+      <a href="https://github.com/fpicella">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Picella-Francesco">ResearchGate</a>
+      <a href="assets/cv-picella.pdf">CV</a>
+      <a href="#contact">Email</a>
+    </p>
   </div>
 </header>
 
-<main id="top" class="wrap">
+<nav class="topnav wrap" aria-label="Sections">
+  <a href="#news">News</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#media">Talks &amp; media</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#students">Students</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="about" class="intro">
-    <figure class="portrait">
-      <img src="assets/photo.jpg" alt="Francesco Picella" width="220" height="220" onerror="this.parentNode.classList.add('missing')">
-      <figcaption class="placeholder-note">photo.jpg</figcaption>
+<main class="wrap">
+
+<!-- ============ NEWS ============
+  Each item: <li class="news-item"> <time> + text + optional <figure class="media"> with
+    an image  : <img src="assets/media/xxx.jpg">
+    a gif     : <img src="assets/media/xxx.gif">
+    a video   : <video controls preload="metadata" poster="..."><source src="assets/media/xxx.mp4" type="video/mp4"></video>
+    YouTube   : <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="..." allowfullscreen loading="lazy"></iframe></div>
+-->
+<section id="news">
+  <h2>News <a class="totop" href="#top">top</a></h2>
+  <ul class="news">
+    <li class="news-item">
+      <time datetime="2026-10">Oct 2026</time>
+      <div>
+        <p>Talk at <b>JMC 2026</b>, the Journées de la Matière Condensée (SFP), in Toulouse, with colleagues from ∂'Alembert.</p>
+        <figure class="media">
+          <img src="assets/media/jmc2026.gif" alt="At JMC 2026 in Toulouse" loading="lazy" onerror="this.parentNode.classList.add('missing')">
+          <figcaption>JMC 2026, Toulouse — with the ∂'Alembert crew.</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li class="news-item">
+      <time datetime="2026-10">Oct 2026</time>
+      <div><p>Two numerical-modelling internships (M1/M2) open for spring 2027 — see <a href="#students">Students</a>.</p></div>
+    </li>
+    <li class="news-item">
+      <time datetime="2026">2026</time>
+      <div><p>New paper with M. Givaudan and H. de Maleprade: <a href="https://doi.org/10.5802/crphys.268"><i>Roll formation in a bio-active fluid</i></a>, Comptes Rendus. Physique.</p></div>
+    </li>
+    <li class="news-item">
+      <time datetime="2024">2024</time>
+      <div><p>Paper with D. Fabre and F. Plouraboué on ionic wind from DC-corona discharges, <i>AIAA Journal</i>.</p></div>
+    </li>
+    <li class="news-item">
+      <time datetime="2022-09">Sept 2022</time>
+      <div><p>Joined Sorbonne Université as Maître de Conférences, Institut ∂'Alembert (FCIH team).</p></div>
+    </li>
+  </ul>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <h2>Research <a class="totop" href="#top">top</a></h2>
+
+  <article class="row">
+    <figure class="fig"><img src="assets/img/research-swimmer.png" alt="Confined phoretic swimmer" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>figure: confined active colloid</figcaption></figure>
+    <div class="row-text">
+      <h3>Confined active colloids &amp; phoretic swimmers</h3>
+      <p>An isotropic active particle cannot swim in an unbounded fluid; <b>confinement breaks the symmetry</b> and selects swimming modes. I study which secondary bifurcations follow (steady, oscillatory, non-axisymmetric) with linear stability analysis and direct simulations. With S. Michelin (LadHyX, École Polytechnique).</p>
+    </div>
+  </article>
+
+  <article class="row">
+    <figure class="fig"><img src="assets/img/research-bioconvection.png" alt="Bioconvection rolls" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>figure: bioconvection</figcaption></figure>
+    <div class="row-text">
+      <h3>Bio-active fluids &amp; bioconvection</h3>
+      <p>Suspensions of swimming micro-organisms organise into <b>convective rolls and plumes</b>. I compare continuum models of these bio-active fluids, including the role of noise, with experiments. With H. de Maleprade (∂'Alembert).</p>
+    </div>
+  </article>
+
+  <article class="row">
+    <figure class="fig"><img src="assets/img/research-shs.png" alt="Transition over superhydrophobic surface" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>figure: transition over slippery walls</figcaption></figure>
+    <div class="row-text">
+      <h3>Transition over biomimetic surfaces</h3>
+      <p><b>Lotus-like superhydrophobic walls</b>, baromorphs and other slippery or compliant interfaces change how a laminar flow becomes turbulent. Receptivity, nonlinear optimal perturbations and the question of how the surface should be modelled.</p>
+    </div>
+  </article>
+
+  <article class="row">
+    <figure class="fig"><img src="assets/img/research-cavity.png" alt="Open cavity flow" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>figure: coupled flows</figcaption></figure>
+    <div class="row-text">
+      <h3>Stability of coupled flows</h3>
+      <p>Global stability and <b>bifurcation sequences</b> in three-dimensional open cavities, flows coupled with electric fields (corona discharges), and fluid–structure interaction with moving boundaries.</p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications">
+  <h2>Publications <a class="totop" href="#top">top</a></h2>
+  <p class="muted">Peer-reviewed articles, newest first. Full list on <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>.</p>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2026-crphys.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.5802/crphys.268">Roll formation in a bio-active fluid</a></h3>
+      <p>How a suspension of swimming micro-organisms self-organises into <b>convective rolls</b>, modelled as a bio-active fluid.</p>
+      <p class="cite">Givaudan M., <b>Picella F.</b>, de Maleprade H., <i>Comptes Rendus. Physique</i> (2026). <a href="https://doi.org/10.5802/crphys.268">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2024-aiaa.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.2514/1.J063325">Numerical simulations of ionic wind induced by positive DC-corona discharges</a></h3>
+      <p>Coupled <b>electro-hydrodynamic simulations</b> of the ionic wind produced by a positive corona discharge.</p>
+      <p class="cite"><b>Picella F.</b>, Fabre D., Plouraboué F., <i>AIAA Journal</i> (2024). <a href="https://doi.org/10.2514/1.J063325">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2022-jfm-colloid.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.1017/jfm.2021.1081">Confined self-propulsion of an isotropic active colloid</a></h3>
+      <p>A uniformly active particle that cannot swim in free space <b>starts to self-propel when confined</b>: confinement, not particle asymmetry, breaks the symmetry.</p>
+      <p class="cite"><b>Picella F.</b>, Michelin S., <i>Journal of Fluid Mechanics</i> 933, A27 (2022). <a href="https://doi.org/10.1017/jfm.2021.1081">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2021-mathematics.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.3390/math9010053">Variational nonlinear optimization in fluid dynamics: the case of a channel flow with superhydrophobic walls</a></h3>
+      <p><b>Nonlinear optimal perturbations</b> in a channel with slippery walls, computed with a variational (adjoint) approach.</p>
+      <p class="cite">Cherubini S., <b>Picella F.</b>, Robinet J.-Ch., <i>Mathematics</i> 9(1), 53 (2021). <a href="https://doi.org/10.3390/math9010053">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2020-jfm-shs.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.1017/jfm.2020.516">On the influence of the modelling of superhydrophobic surfaces on laminar–turbulent transition</a></h3>
+      <p>Whether the surface is modelled as a homogeneous slip wall or as a <b>textured, heterogeneous one</b> changes the transition scenario.</p>
+      <p class="cite"><b>Picella F.</b>, Robinet J.-Ch., Cherubini S., <i>Journal of Fluid Mechanics</i> 901, A15 (2020). <a href="https://doi.org/10.1017/jfm.2020.516">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2019-jfm-slip.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.1017/jfm.2019.740">Laminar–turbulent transition in channel flow with superhydrophobic surfaces modelled as a partial slip wall</a></h3>
+      <p><b>Slip delays transition</b>, but by how much depends on the path the flow takes to turbulence.</p>
+      <p class="cite"><b>Picella F.</b>, Robinet J.-Ch., Cherubini S., <i>Journal of Fluid Mechanics</i> 881, 462–497 (2019). <a href="https://doi.org/10.1017/jfm.2019.740">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2019-jcp.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.jcp.2019.04.011">A synthetic forcing to trigger laminar–turbulent transition in parallel wall bounded flows via receptivity</a></h3>
+      <p>A numerical method that <b>mimics receptivity to free-stream disturbances</b> with a synthetic forcing, to trigger transition in a controlled way.</p>
+      <p class="cite"><b>Picella F.</b>, Bucci M. A., Cherubini S., Robinet J.-Ch., <i>Journal of Computational Physics</i> 393, 92–116 (2019). <a href="https://doi.org/10.1016/j.jcp.2019.04.011">doi</a></p>
+    </div>
+  </article>
+
+  <article class="pub">
+    <figure class="thumb"><img src="assets/pubs/2018-jfm-cavity.png" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')"></figure>
+    <div>
+      <h3><a href="https://doi.org/10.1017/jfm.2018.169">Successive bifurcations in a fully three-dimensional open cavity flow</a></h3>
+      <p>The <b>sequence of bifurcations</b> of a 3D open cavity flow, from global stability analysis and simulations, compared with experiments.</p>
+      <p class="cite"><b>Picella F.</b>, Loiseau J.-Ch., Lusseyran F., Robinet J.-Ch., Cherubini S., Pastur L. R., <i>Journal of Fluid Mechanics</i> 844, 855–877 (2018). <a href="https://doi.org/10.1017/jfm.2018.169">doi</a></p>
+    </div>
+  </article>
+</section>
+
+<!-- ============ TALKS & MEDIA ============
+  Gallery of photos / videos. Each <figure class="card"> holds an <img>, a <video> or a .yt iframe, plus a caption.
+-->
+<section id="media">
+  <h2>Talks &amp; media <a class="totop" href="#top">top</a></h2>
+  <p class="muted">Conference talks, seminars, outreach and a few pictures from the road.</p>
+  <div class="gallery">
+    <figure class="card">
+      <div class="yt" data-placeholder="video: a recorded talk (YouTube)"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Recorded talk" loading="lazy" allowfullscreen></iframe></div>
+      <figcaption>Seminar — title, place, year.</figcaption>
     </figure>
-    <div class="intro-text">
-      <h1>Francesco Picella</h1>
-      <p class="role">Maître de Conférences · Fluid mechanics<br>
-        <a href="https://www.dalembert.upmc.fr/">Institut Jean Le Rond ∂'Alembert</a>, Sorbonne Université / CNRS, Paris</p>
-      <p>I study how flows lose their symmetry and become complex. My work couples hydrodynamics with complex interfaces (biomimetic, deformable, slippery) and with chemical or electrical fields, using direct numerical simulation, mathematical modelling and global linear stability analysis to follow transitions from the first symmetry breaking up to chaotic dynamics.</p>
-      <p>Current interests: active fluids and microswimmers, bio-active suspensions and bioconvection, laminar–turbulent transition, fluid–structure interaction.</p>
-      <p class="links">
-        <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Picella-Francesco">ResearchGate</a>
-        <a href="https://github.com/fpicella">GitHub</a>
-        <a href="cv/">CV</a>
-      </p>
-    </div>
-  </section>
+    <figure class="card">
+      <img src="assets/media/talk-01.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')">
+      <figcaption>Talk at JMC 2026, Toulouse.</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/group-01.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')">
+      <figcaption>With the FCIH team, Jussieu.</figcaption>
+    </figure>
+  </div>
+</section>
 
-  <section id="news">
-    <h2>News</h2>
-    <ul class="news">
-      <li><time datetime="2026-10">Oct 2026</time>
-        <div>Talk at JMC 2026 (Journées de la Matière Condensée) in Toulouse, with colleagues from ∂'Alembert.
-          <figure class="news-media"><img src="assets/jmc2026.gif" alt="JMC 2026, Toulouse" loading="lazy" onerror="this.parentNode.remove()"></figure>
-        </div></li>
-      <li><time datetime="2026-10">Oct 2026</time>
-        <div>ANR JCJC proposal <em>TARAS</em> submitted (AAPG 2027).</div></li>
-      <li><time datetime="2026">2026</time>
-        <div>New paper: <em>Roll formation in a bio-active fluid</em>, with M. Givaudan and H. de Maleprade, <em>Comptes Rendus. Physique</em>.</div></li>
-      <li><time datetime="2024">2024</time>
-        <div>Paper on ionic wind from DC-corona discharges with D. Fabre and F. Plouraboué, <em>AIAA Journal</em>.</div></li>
-      <li><time datetime="2022-09">Sept 2022</time>
-        <div>Joined Sorbonne Université as Maître de Conférences (Institut ∂'Alembert, FCIH team).</div></li>
-    </ul>
-  </section>
+<!-- ============ TEACHING ============ -->
+<section id="teaching">
+  <h2>Teaching <a class="totop" href="#top">top</a></h2>
+  <p>Sorbonne Université, Faculté des Sciences et Ingénierie — all my teaching is concentrated in the first semester.</p>
+  <ul>
+    <li><b>Pratique de la simulation numérique (OpenFOAM)</b> — M2 Mécanique des fluides.</li>
+    <li><b>Force, Énergie, Mouvement 1</b> — L1, travaux dirigés.</li>
+    <li><b>Travaux pratiques de mesures</b> (masse, longueur, force, thermométrie) — L1.</li>
+  </ul>
+</section>
 
-  <section id="research">
-    <h2>Research</h2>
-    <div class="topics">
-      <article>
-        <h3>Confined active colloids &amp; phoretic swimmers</h3>
-        <p>Self-propulsion of isotropic active particles in confinement: how walls select swimming modes, and which secondary bifurcations (steady, oscillatory, non-axisymmetric) follow. With S. Michelin (LadHyX).</p>
-      </article>
-      <article>
-        <h3>Bio-active fluids &amp; bioconvection</h3>
-        <p>Pattern formation in suspensions of swimming micro-organisms: roll formation, continuum models and the role of noise, compared with experiments. With H. de Maleprade (∂'Alembert).</p>
-      </article>
-      <article>
-        <h3>Transition over biomimetic surfaces</h3>
-        <p>Laminar–turbulent transition in channel flows with superhydrophobic (lotus-like) walls, baromorphs and other compliant or slippery interfaces; receptivity, nonlinear optimal perturbations.</p>
-      </article>
-      <article>
-        <h3>Stability of coupled flows</h3>
-        <p>Global stability and bifurcation sequences in three-dimensional open cavities, and flows coupled with electric fields (corona discharges, plasma actuators).</p>
-      </article>
-    </div>
-    <p class="muted">Students and post-docs: if you want to join, send me a CV and a few lines about what you have done.</p>
-  </section>
+<!-- ============ STUDENTS ============ -->
+<section id="students">
+  <h2>Students <a class="totop" href="#top">top</a></h2>
+  <p>I regularly supervise M1/M2 internships (February to September) on numerical modelling of active and bio-active fluids, instabilities and transition. If you want to join, send me a CV and a few lines about what you have done — and what you would like to do.</p>
+  <ul>
+    <li><b>Internship 2027</b> — Bioconvection and oxygen depletion in micro-algae suspensions (numerical modelling). <a href="assets/stages/stage-bioconvection-2027.pdf">pdf</a></li>
+    <li><b>Internship 2027</b> — Instabilities of confined swimmers, project TARAS (numerical modelling). <a href="assets/stages/stage-taras-2027.pdf">pdf</a></li>
+  </ul>
+</section>
 
-  <section id="publications">
-    <h2>Publications</h2>
-    <ol class="pubs" reversed>
-      <li>M. Givaudan, <b>F. Picella</b>, H. de Maleprade. <em>Roll formation in a bio-active fluid.</em> Comptes Rendus. Physique (2026). <a href="https://doi.org/10.5802/crphys.268">doi</a></li>
-      <li><b>F. Picella</b>, D. Fabre, F. Plouraboué. <em>Numerical simulations of ionic wind induced by positive DC-corona discharges.</em> AIAA Journal (2024). <a href="https://doi.org/10.2514/1.J063325">doi</a></li>
-      <li><b>F. Picella</b>, S. Michelin. <em>Confined self-propulsion of an isotropic active colloid.</em> Journal of Fluid Mechanics 933, A27 (2022). <a href="https://doi.org/10.1017/jfm.2021.1081">doi</a></li>
-      <li>S. Cherubini, <b>F. Picella</b>, J.-Ch. Robinet. <em>Variational nonlinear optimization in fluid dynamics: the case of a channel flow with superhydrophobic walls.</em> Mathematics 9(1), 53 (2021). <a href="https://doi.org/10.3390/math9010053">doi</a></li>
-      <li><b>F. Picella</b>, J.-Ch. Robinet, S. Cherubini. <em>On the influence of the modelling of superhydrophobic surfaces on laminar–turbulent transition.</em> Journal of Fluid Mechanics 901, A15 (2020). <a href="https://doi.org/10.1017/jfm.2020.516">doi</a></li>
-      <li><b>F. Picella</b>, J.-Ch. Robinet, S. Cherubini. <em>Laminar–turbulent transition in channel flow with superhydrophobic surfaces modelled as a partial slip wall.</em> Journal of Fluid Mechanics 881, 462–497 (2019). <a href="https://doi.org/10.1017/jfm.2019.740">doi</a></li>
-      <li><b>F. Picella</b>, M. A. Bucci, S. Cherubini, J.-Ch. Robinet. <em>A synthetic forcing to trigger laminar–turbulent transition in parallel wall bounded flows via receptivity.</em> Journal of Computational Physics 393, 92–116 (2019). <a href="https://doi.org/10.1016/j.jcp.2019.04.011">doi</a></li>
-      <li><b>F. Picella</b>, J.-Ch. Loiseau, F. Lusseyran, J.-Ch. Robinet, S. Cherubini, L. R. Pastur. <em>Successive bifurcations in a fully three-dimensional open cavity flow.</em> Journal of Fluid Mechanics 844, 855–877 (2018). <a href="https://doi.org/10.1017/jfm.2018.169">doi</a></li>
-    </ol>
-    <p class="muted">Full list on <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>.</p>
-  </section>
-
-  <section id="teaching">
-    <h2>Teaching</h2>
-    <p>Sorbonne Université, Faculté des Sciences et Ingénierie.</p>
-    <ul class="plain">
-      <li><b>Pratique de la simulation numérique (OpenFOAM)</b>, M2 Mécanique des fluides.</li>
-      <li><b>Force, Énergie, Mouvement 1</b>, L1 — travaux dirigés.</li>
-      <li><b>Travaux pratiques de mesures</b> (masse, longueur, force, thermométrie), L1.</li>
-    </ul>
-    <p>Internship proposals (M1/M2) are listed on the <a href="https://www.dalembert.upmc.fr/ijlrda/index.php?option=com_content&amp;view=article&amp;id=12&amp;Itemid=110">∂'Alembert master page</a>; feel free to write to me directly.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <h2>Get in touch! <a class="totop" href="#top">top</a></h2>
+  <div class="contact">
     <address>
-      <p>francesco.picella<span aria-hidden="true"> [at] </span><span class="sr-only">@</span>sorbonne-universite.fr<br>
-      +33 (0)1 44 27 54 68</p>
-      <p>Institut Jean Le Rond ∂'Alembert<br>
-      Sorbonne Université, Campus Pierre et Marie Curie<br>
-      Tour 55-65, 5<sup>e</sup> étage, bureau 520<br>
-      Boîte courrier 162, 4 place Jussieu<br>
-      75252 Paris Cedex 05, France</p>
+      <p><b>francesco.picella<span class="at"> [at] </span>sorbonne-universite.fr</b><br>+33 (0)1 44 27 54 68</p>
+      <p>Institut Jean Le Rond ∂'Alembert<br>Sorbonne Université, Campus Pierre et Marie Curie<br>Tour 55-65, 5<sup>e</sup> étage, bureau 520<br>Boîte courrier 162, 4 place Jussieu<br>75252 Paris Cedex 05, France</p>
     </address>
-  </section>
+    <p class="iconlinks">
+      <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>
+      <a href="https://github.com/fpicella">GitHub</a>
+      <a href="https://www.researchgate.net/profile/Picella-Francesco">ResearchGate</a>
+      <a href="assets/cv-picella.pdf">CV</a>
+    </p>
+  </div>
+</section>
 
 </main>
 
 <footer class="wrap">
-  <p>© Francesco Picella · Last updated <time datetime="2026-10-30">30 October 2026</time> · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
+  <a class="portrait small" href="#top" aria-label="Back to top"><img src="assets/img/portrait.jpg" alt="" width="56" height="56" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'portrait-fallback',textContent:'FP'}))"></a>
+  <p>© 2026 Francesco Picella · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
 </footer>
 
 </body>
