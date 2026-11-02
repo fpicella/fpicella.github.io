@@ -24,6 +24,6 @@ Until a picture exists, its slot shows a striped "image to add" box; drop the fi
 - When content changes, update `lastmod` in `sitemap.xml`.
 
 ## Custom domain
-Create a file `CNAME` at the root containing the domain (e.g. `francescopicella.fr`). At the registrar add
+Create a file `CNAME` at the root containing the domain (e.g. `francescopicella.com`). At the registrar add
 `A` records → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 and `CNAME www → fpicella.github.io`.
 Then replace `https://fpicella.github.io/` by the domain in `index.html` (canonical, og:url, JSON-LD), `robots.txt` and `sitemap.xml`, and tick "Enforce HTTPS" in the repo settings → Pages.
