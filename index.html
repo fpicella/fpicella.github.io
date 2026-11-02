@@ -91,6 +91,16 @@
   <h2>News <a class="totop" href="#top">top</a></h2>
   <ul class="news">
     <li class="news-item">
+      <time datetime="2026-11">Nov 2026</time>
+      <div>
+        <p>Visiting <a href="https://scholar.google.com/citations?user=J_v4ayUAAAAJ">Julien Lemetayer</a> in Toulouse.</p>
+        <figure class="media narrow">
+          <img src="assets/media/lemetayer-2026.jpg" alt="Polaroid of Francesco Picella and Julien Lemetayer" loading="lazy">
+          <figcaption>Toulouse, November 2026.</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li class="news-item">
       <time datetime="2027">2027</time>
       <div><p><b>Invited talk</b> at the Cercle Pierre de Jumièges of the <a href="https://www.arts-et-metiers.asso.fr/events/212939">Société des ingénieurs Arts &amp; Métiers</a>, Paris — <i>Formes futures : ce que la nature révèle à l'ingénieur</i>. I will talk about gas lubrication for maritime transport, alongside fellow laureates of the Prix Pierre Bézier.</p></div>
     </li>
@@ -306,7 +316,10 @@
       <figcaption><b>C'est la grève !</b> — <i>Où est Charlie ? Blocus à Jussieu</i>. Image generated with AI.</figcaption>
     </figure>
     <figure class="card">
-      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/k3ipk559rK4" title="Controlling laminar-to-turbulent transition with superhydrophobic surfaces — seminar at Institut ∂'Alembert" loading="lazy" allowfullscreen></iframe></div>
+      <div class="yt" data-id="k3ipk559rK4" data-title="Controlling laminar-to-turbulent transition with superhydrophobic surfaces — seminar at Institut ∂'Alembert">
+        <img src="assets/media/seminar-2022-poster.jpg" alt="Slide from the seminar: three couplings with hydrodynamics" loading="lazy">
+        <button type="button" class="play" aria-label="Play the video">▶</button>
+      </div>
       <figcaption><b>Controlling laminar-to-turbulent transition with superhydrophobic surfaces</b> — seminar at Institut ∂'Alembert, 2022. <a href="https://www.youtube.com/watch?v=k3ipk559rK4">YouTube</a></figcaption>
     </figure>
     <figure class="card">
@@ -320,6 +333,10 @@
     <figure class="card">
       <img src="assets/media/lotus-2019.jpg" alt="Francesco Picella looking at a lotus leaf" loading="lazy">
       <figcaption>Field work: checking the lotus effect on the real thing (2019).</figcaption>
+    </figure>
+    <figure class="card">
+      <img src="assets/media/field-research-2023.jpg" alt="Francesco Picella by the sea with a slice of pizza and a beer" loading="lazy">
+      <figcaption>Field research with S. Picella, December 2023.</figcaption>
     </figure>
     <figure class="card">
       <img src="assets/media/epfl-2026.jpg" alt="" loading="lazy" onerror="this.parentNode.classList.add('missing')">
@@ -378,6 +395,20 @@
   <a class="portrait small" href="#top" aria-label="Back to top"><img src="assets/img/portrait.jpg" alt="" width="56" height="56"></a>
   <p>© 2026 Francesco Picella · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
 </footer>
+
+<script>
+// YouTube cards: show a still image, load the player only when clicked.
+document.querySelectorAll('.yt[data-id]').forEach(function (box) {
+  box.addEventListener('click', function () {
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.id + '?autoplay=1';
+    f.title = box.dataset.title || 'Video';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture';
+    f.allowFullscreen = true;
+    box.replaceChildren(f);
+  }, { once: true });
+});
+</script>
 
 </body>
 </html>
