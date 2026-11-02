@@ -67,6 +67,9 @@ h1::after { content: ""; display: block; width: 7rem; height: 4px; margin-top: .
 }
 .iconlinks a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
 
+.ribbon { margin-top: 1rem; padding: .5rem .9rem; border-left: 3px solid var(--accent); background: var(--surface); border-radius: 0 6px 6px 0; font-size: 1rem; }
+.ribbon a { font-weight: 600; }
+
 /* ---- nav ---- */
 .topnav {
   display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.6rem;
