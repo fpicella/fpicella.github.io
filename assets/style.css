@@ -121,6 +121,8 @@ h3 a:hover { color: var(--accent); }
 .logo-fig img { width: 60%; max-width: 260px; margin-inline: auto; border-radius: 50%; border: 0; background: #fff; }
 .offers .card img { object-fit: cover; }
 .todo { color: var(--accent); border-bottom: 1px dashed var(--accent); }
+.project .fig.wide { grid-column: 1 / -1; margin-top: .4rem; }
+.project .fig.wide img { background: #fff; }
 
 /* research rows: figure left, text right; alternate on even rows */
 .row { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 1.4rem 2rem; align-items: center; padding-block: 1.1rem; border-bottom: 1px solid var(--rule); }
