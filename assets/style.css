@@ -118,6 +118,8 @@ h3 a:hover { color: var(--accent); }
 .project-figs { display: grid; gap: 1rem; align-content: start; }
 .project-figs .fig figcaption { display: block; }
 .ga img { border-color: var(--accent-3); }
+.logo-fig img { width: 60%; max-width: 260px; margin-inline: auto; border-radius: 50%; border: 0; background: #fff; }
+.offers .card img { object-fit: cover; }
 .todo { color: var(--accent); border-bottom: 1px dashed var(--accent); }
 
 /* research rows: figure left, text right; alternate on even rows */
