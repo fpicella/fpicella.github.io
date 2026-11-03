@@ -137,7 +137,7 @@ h3 a:hover { color: var(--accent); }
 .row .fig figcaption { display: none; }
 
 /* publications */
-.pub { display: grid; grid-template-columns: 8rem 1fr; gap: 1.4rem; padding-block: 1.1rem; border-bottom: 1px solid var(--rule); align-items: start; }
+.pub { display: grid; grid-template-columns: 17rem 1fr; gap: 1.4rem; padding-block: 1.1rem; border-bottom: 1px solid var(--rule); align-items: start; }
 .pub:last-child { border-bottom: 0; }
 .pub > div { min-width: 0; }
 .thumb { margin: 0; }
@@ -199,5 +199,5 @@ footer p { margin: 0; }
   .row .fig { max-width: 14rem; }
   .affil { flex-direction: column; }
   .row:nth-child(even) .fig { order: 0; }
-  .thumb { max-width: 14rem; }
+  .thumb { max-width: 100%; }
 }
