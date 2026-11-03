@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://francescopicella.com/assets/img/portrait.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@600&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">
 {
@@ -80,7 +80,7 @@
   <a href="#publications">Publications</a>
   <a href="#media">Talks &amp; media</a>
   <a href="#teaching">Teaching</a>
-  <a href="#students">Students</a>
+  <a href="#students">Open positions</a>
   <a href="#alumni">Alumni</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -104,8 +104,12 @@
       <time datetime="2026-11">Nov 2026</time>
       <div>
         <p>Visiting <a href="https://scholar.google.com/citations?user=J_v4ayUAAAAJ">Julien Lemetayer</a> and colleagues at <a href="https://www.imft.fr/">IMFT</a> (Institut de Mécanique des Fluides de Toulouse).</p>
-        <figure class="media narrow">
-          <img src="assets/media/lemetayer-2026.jpg" alt="Polaroid of Francesco Picella and Julien Lemetayer" loading="lazy">
+        <figure class="media annot">
+          <div class="annot-box">
+            <img src="assets/media/lemetayer-2026.jpg" alt="Polaroid of Francesco Picella and Julien Lemetayer in front of the IMFT wind tunnel" loading="lazy">
+            <span class="hand">IMFT's wind tunnel!</span>
+            <svg class="hand-arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M58 26 C 70 30, 80 45, 84 62" fill="none" stroke="#f0f921" stroke-width="2.2" stroke-linecap="round"/><path d="M78 56 L84 62 L88 54" fill="none" stroke="#f0f921" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <figcaption>IMFT, Toulouse, November 2026.</figcaption>
         </figure>
       </div>
@@ -122,7 +126,7 @@
     </li>
     <li class="news-item">
       <time datetime="2026-10">Oct 2026</time>
-      <div><p>Two numerical-modelling internships (M1/M2) open for spring 2027, on the <a href="#chlamy">Chlamy</a> and <a href="#taras">TARAS</a> projects — see <a href="#students">Students</a>.</p></div>
+      <div><p>Two numerical-modelling internships (M1/M2) open for spring 2027, on the <a href="#chlamy">Chlamy</a> and <a href="#taras">TARAS</a> projects — see <a href="#students">Open positions</a>.</p></div>
     </li>
     <li class="news-item">
       <time datetime="2026-08">Aug 2026</time>
@@ -179,17 +183,25 @@
       <p class="tag">ANR JCJC proposal (AAPG 2027) · superhydrophobic drag reduction</p>
       <p>Superhydrophobic surfaces trap a thin layer of air, the <b>plastron</b>, between the solid and the water. The flow slips over the gas pockets, friction drops, and the idea of an air-lubricated ship hull is not far away. Most models freeze the air–water interface in place; in reality the trapped air <b>responds to the flow</b> — it deforms, it can be dragged out of its cavities — and the flow responds back.</p>
       <p>TARAS builds a <b>two-way wall model</b> for this coupling, from the microscopic gas pocket (deflection <i>η</i>, surface tension <i>σ</i>) to the laminar–turbulent transition of the whole channel, to predict when drag reduction survives and when it is lost.</p>
-      <p class="muted">Internship open for 2027 — see <a href="#students">Students</a>.</p>
+      <p class="muted">Internship open for 2027 — see <a href="#students">Open positions</a>.</p>
     </div>
     <div class="project-figs">
       <figure class="fig logo-fig"><img src="assets/img/taras-logo.png" alt="TARAS project logo: Taras surfing a wave on a Salvinia leaf whose hairs hold a layer of air" loading="lazy"><figcaption>Taras rides the wave on a <i>Salvinia</i> leaf — the fern that keeps a layer of air on its hairs under water.</figcaption></figure>
     </div>
-    <figure class="fig wide">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/taras-anim-poster.png" aria-label="Animation: water flows over a textured wall; it slips over the trapped air, the flow bends one interface until it unpins, the gas escapes, the pocket wets and the slip is lost">
-        <source src="assets/media/taras-anim.mp4" type="video/mp4">
-      </video>
-      <figcaption>The idea in ten seconds: water slips over the trapped air and friction drops; the flow bends an interface until it unpins, the gas escapes, the pocket wets, and the gain is lost. TARAS models this two-way coupling and predicts when it fails.</figcaption>
-    </figure>
+    <div class="films">
+      <figure class="fig">
+        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-1-poster.jpg"><source src="assets/media/taras-1.mp4" type="video/mp4"></video>
+        <figcaption><b>1 · The idea.</b> <i>Salvinia</i> keeps a layer of air on its hairs under water; copy the trick on a hull and the water slips.</figcaption>
+      </figure>
+      <figure class="fig">
+        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-2-poster.jpg"><source src="assets/media/taras-2.mp4" type="video/mp4"></video>
+        <figcaption><b>2 · The problem.</b> Pressure and shear bend the interface until it unpins: the pocket wets, the slip is gone.</figcaption>
+      </figure>
+      <figure class="fig">
+        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-3-poster.jpg"><source src="assets/media/taras-3.mp4" type="video/mp4"></video>
+        <figcaption><b>3 · A way back.</b> Electrolysis at the bottom of the texture regrows the plastron (Lloyd et al. 2021).</figcaption>
+      </figure>
+    </div>
   </article>
 
   <article class="project" id="chlamy">
@@ -198,7 +210,7 @@
       <p class="tag">with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a> (∂'Alembert) · bio-active fluids</p>
       <p><i>Chlamydomonas</i> are swimming micro-algae, slightly denser than water, that swim upwards. Gathered at the top, the suspension becomes top-heavy and overturns into <b>plumes and rolls</b>: bioconvection. In experiments at ∂'Alembert, Hélène changes the environment — the light, the bathymetry of the cell — and the plumes answer: with a zigzag bottom they form under the crests rather than in the troughs.</p>
       <p>On my side I write <b>continuum models</b> of the suspension and simulate them in 3D. Without noise the model lingers for a very long time before organising; with noise it falls at once into the state seen in experiments, which points to an <b>instability</b> that we now analyse with the tools of hydrodynamic stability. Next: coupling the cells' own <b>oxygen consumption</b> to the flow — what happens when the algae make their water anoxic.</p>
-      <p class="muted">Internship open for 2027 — see <a href="#students">Students</a>.</p>
+      <p class="muted">Internship open for 2027 — see <a href="#students">Open positions</a>.</p>
     </div>
     <div class="project-figs">
       <figure class="fig"><img src="assets/img/chlamy-composite.jpg" alt="A single Chlamydomonas cell beating its two flagella; to its right a swarm of cells crowds under the surface and sinks as a plume" loading="lazy"><figcaption>One cell (≈ 10 µm, swims up at ≈ 100 µm/s) — and the plume a crowd of them builds, a hundred times bigger.</figcaption></figure>
@@ -388,7 +400,7 @@
 
 <!-- ============ STUDENTS ============ -->
 <section id="students">
-  <h2>Students <a class="totop" href="#top">top</a></h2>
+  <h2>Open positions <a class="totop" href="#top">top</a></h2>
   <p>I regularly supervise M1/M2 internships (February to September) on numerical modelling of active and bio-active fluids, instabilities and transition. If you want to join, send me a CV and a few lines about what you have done — and what you would like to do.</p>
   <div class="offers">
     <figure class="card">

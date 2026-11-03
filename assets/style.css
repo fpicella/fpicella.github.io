@@ -108,6 +108,14 @@ h3 a:hover { color: var(--accent); }
   background: color-mix(in srgb, var(--bg) 70%, transparent); color: var(--accent); font-size: 1.6rem; padding-left: .3rem; box-shadow: 0 0 0 2px var(--accent); }
 .yt[data-id]:hover .play { background: var(--accent); color: var(--bg); }
 .media.narrow { max-width: 20rem; }
+.media.annot { max-width: 22rem; }
+.annot-box { position: relative; }
+.hand { position: absolute; left: 6%; top: 8%; font-family: "Caveat", "Comic Sans MS", cursive; font-size: 1.7rem; font-weight: 600; color: #f0f921; transform: rotate(-6deg); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+.hand-arrow { position: absolute; inset: 0; width: 100%; height: 100%; }
+.films { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: .6rem; }
+.films video { width: 100%; border-radius: 6px; border: 1px solid var(--rule); background: #f8f6f1; }
+.films figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
+@media (max-width: 760px) { .films { grid-template-columns: 1fr; } }
 
 /* projects */
 .project { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 1.4rem 2rem; padding-block: 1.2rem 1.6rem; border-bottom: 1px solid var(--rule); scroll-margin-top: 1rem; }
