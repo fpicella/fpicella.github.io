@@ -1,5 +1,6 @@
-/* Francesco Picella — personal site. Dark, single page, content first.
-   Layout: centred column (62rem), round portrait + name on top, anchor nav, sections with figure/text rows.
+/* Francesco Picella — personal site. Dark, content first.
+   Pages: index (hero + teasers + latest news), research, publications, news, talks, teaching, positions.
+   Layout: centred column (62rem); the home page has the big hero, the other pages a compact header; the same nav on all.
    Accent: a "plasma" colormap ramp (the colormap of every plot on this site). */
 
 :root {
@@ -76,8 +77,51 @@ h1::after { content: ""; display: block; width: 7rem; height: 4px; margin-top: .
   padding-block: .9rem; margin-bottom: 1rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
   font-weight: 500;
 }
-.topnav a { color: var(--fg); }
+.topnav a { color: var(--fg); padding-bottom: .1rem; border-bottom: 2px solid transparent; }
 .topnav a:hover { color: var(--accent); text-decoration: none; }
+.topnav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---- compact header (inner pages) ---- */
+.site-head { display: flex; align-items: center; gap: 1rem; padding-block: 1.3rem .5rem; }
+.site-head .portrait { width: 64px; height: 64px; box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent-2); }
+.site-head .name { color: var(--fg); font-size: 1.4rem; font-weight: 700; line-height: 1.1; }
+.site-head .name:hover { text-decoration: none; color: var(--accent); }
+.site-head .name small { display: block; color: var(--muted); font-weight: 400; font-size: .85rem; margin-top: .15rem; }
+.page-title { font-size: clamp(1.9rem, 4vw, 2.5rem); line-height: 1.1; margin: 1.4rem 0 .5rem; letter-spacing: -.01em; }
+.page-title::after { content: ""; display: block; width: 5rem; height: 4px; margin-top: .5rem; border-radius: 2px; background: var(--plasma); }
+.lede { color: var(--muted); max-width: 46rem; margin-bottom: 1.2rem; }
+
+/* ---- home: research teasers ---- */
+.teasers { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.2rem; }
+.teaser { margin: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
+.teaser:hover { border-color: var(--accent); }
+.teaser img, .teaser video { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 0; border-radius: 0; background: #000; }
+.teaser figcaption { padding: .75rem .9rem .95rem; color: var(--fg); font-size: .95rem; }
+.teaser figcaption b { display: block; font-size: 1.05rem; margin-bottom: .15rem; }
+.teaser figcaption .more { white-space: nowrap; }
+.teaser figcaption a.cover { color: inherit; }
+.teaser figcaption a.cover::before { content: ""; position: absolute; inset: 0; }
+.teaser { position: relative; }
+.section-more { text-align: right; margin-top: .8rem; font-weight: 500; }
+
+/* ---- research page ---- */
+.collab { color: var(--muted); font-size: .95rem; margin-top: .8rem; padding-top: .5rem; border-top: 1px dashed var(--rule); }
+.collab b { color: var(--fg); font-weight: 500; }
+.film { max-width: 46rem; margin: .4rem 0 0; }
+.film video { width: 100%; border-radius: 6px; border: 1px solid var(--rule); background: #000; display: block; }
+.sandbox { list-style: none; padding: 0; margin: .4rem 0 .8rem; display: grid; gap: .45rem; }
+.sandbox li { position: relative; padding-left: 1.1rem; margin: 0; }
+.sandbox li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+.toolbox { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .8rem 1.4rem; margin: .4rem 0 .8rem; }
+.toolbox div { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: .7rem .9rem; font-size: .95rem; }
+.toolbox div b { display: block; color: var(--accent); margin-bottom: .2rem; }
+.badge { display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--bg); background: var(--accent); border-radius: 999px; padding: .1rem .55rem; vertical-align: middle; }
+
+/* ---- alumni ---- */
+.alumni { list-style: none; padding: 0; display: grid; gap: .8rem; }
+.alumni li { padding: .7rem .9rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; margin: 0; }
+.alumni li .who { font-weight: 700; }
+.alumni li .what { color: var(--muted); font-size: .95rem; display: block; }
 
 /* ---- sections ---- */
 section { padding-block: 1.6rem 1rem; }
@@ -111,11 +155,8 @@ h3 a:hover { color: var(--accent); }
 .media.annot { max-width: 22rem; }
 .annot-box { position: relative; }
 .hand { position: absolute; left: 6%; top: 8%; font-family: "Caveat", "Comic Sans MS", cursive; font-size: 1.7rem; font-weight: 600; color: #f0f921; transform: rotate(-6deg); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
-.hand-arrow { position: absolute; inset: 0; width: 100%; height: 100%; }
-.films { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: .6rem; }
-.films video { width: 100%; border-radius: 6px; border: 1px solid var(--rule); background: #f8f6f1; }
-.films figcaption { color: var(--muted); font-size: .9rem; margin-top: .4rem; }
-@media (max-width: 760px) { .films { grid-template-columns: 1fr; } }
+.hand-arrow { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.hand-arrow path { fill: none; stroke: #f0f921; stroke-linecap: round; stroke-linejoin: round; }
 
 /* projects */
 .project { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 1.4rem 2rem; padding-block: 1.2rem 1.6rem; border-bottom: 1px solid var(--rule); scroll-margin-top: 1rem; }
@@ -208,4 +249,6 @@ footer p { margin: 0; }
   .affil { flex-direction: column; }
   .row:nth-child(even) .fig { order: 0; }
   .thumb { max-width: 100%; }
+  .site-head { flex-wrap: wrap; }
+  .topnav { gap: .3rem 1rem; font-size: 1rem; }
 }

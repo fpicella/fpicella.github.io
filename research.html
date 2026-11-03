@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Research — Francesco Picella</title>
+<meta name="description" content="Research of Francesco Picella (Institut ∂'Alembert, Sorbonne Université): bioconvection of micro-algae, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, and tools built in Basilisk.">
+<meta name="author" content="Francesco Picella">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0f1115">
+<link rel="canonical" href="https://francescopicella.com/research.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research — Francesco Picella">
+<meta property="og:description" content="Bioconvection, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, Basilisk tools.">
+<meta property="og:url" content="https://francescopicella.com/research.html">
+<meta property="og:image" content="https://francescopicella.com/assets/img/bioconvection-poster.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header id="top" class="site-head wrap">
+  <a class="portrait" href="index.html" aria-label="Home"><img src="assets/img/portrait.jpg" alt="" width="64" height="64"></a>
+  <a class="name" href="index.html">Francesco Picella<small>Fluid mechanics · Institut ∂'Alembert, Sorbonne Université</small></a>
+</header>
+<nav class="topnav wrap" aria-label="Pages">
+  <a href="index.html">Home</a>
+  <a href="research.html" aria-current="page">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="news.html">News</a>
+  <a href="talks.html">Talks &amp; media</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="positions.html">Open positions</a>
+</nav>
+
+<main class="wrap">
+
+<h1 class="page-title">Research</h1>
+<p class="lede">My work sits between theory, modelling and computation. Take a flow that is coupled to something else — a population of swimming cells, a self-propelled colloid, a layer of air trapped on a wall, an electric field, a deformable boundary — write the smallest model that keeps the coupling, and ask the questions of <b>hydrodynamic stability</b>: what is the base state, when does it lose stability, which pattern is selected, what happens next. Linear and global stability, adjoint and nonlinear optimisation, direct numerical simulation are the tools; the experiments of colleagues are the check.</p>
+<p class="muted">Jump to: <a href="#bioconvection">Bioconvection</a> · <a href="#active">Artificial active matter</a> · <a href="#ushs">Underwater superhydrophobic surfaces</a> · <a href="#stability">Stability of coupled flows</a> · <a href="#basilisk">Tools in Basilisk</a></p>
+
+<!-- ============ BIOCONVECTION ============ -->
+<section id="projects">
+
+  <article class="project" id="bioconvection">
+    <div class="project-text">
+      <h3>Bioconvection — micro-algae suspensions over a structured floor</h3>
+      <p class="tag">bio-active fluids · with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a> (∂'Alembert)</p>
+      <p><i>Chlamydomonas</i> are swimming micro-algae, slightly denser than water, that swim upwards. Gathered under the surface, the suspension becomes top-heavy and overturns into <b>plumes and rolls</b>: bioconvection, first drawn by Wager in 1911. In the experiments at ∂'Alembert, Hélène changes the environment — the light, the depth, the bathymetry of the cell — and the plumes answer: over a zigzag floor they are born in the troughs and end up on the crests.</p>
+      <p>On my side I write <b>continuum models</b> of the suspension (cell density, orientation, flow) and simulate them in 2D and 3D. Without noise the model lingers for a very long time before organising; with noise it falls at once into the state seen in the experiments — which points to an <b>instability</b>, analysed with the tools of <a href="#stability">hydrodynamic stability</a>: the base state with the cells piled under the surface, its eigenmodes and growth rates on flat, sloped and zigzag floors. An agent-resolved model (a few thousand swimmers coupled through the fluid) checks the continuum one. Next: coupling the cells' own <b>oxygen consumption</b> to the flow — what happens when the algae make their water anoxic.</p>
+      <p class="collab"><b>With</b> Hélène de Maleprade (experiments, ∂'Alembert), M. Givaudan (∂'Alembert; <a href="publications.html#crphys2026">C. R. Physique 2026</a>), A. Huyghues-Despointes (Petri-dish experiments), <a href="https://pgledda.github.io/">Pier Giuseppe Ledda</a> (University of Cagliari; complex interfaces, BRIDGE visit 2026). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p>
+    </div>
+    <div class="project-figs">
+      <figure class="fig"><img src="assets/img/chlamy-composite.jpg" alt="A single Chlamydomonas cell beating its two flagella; to its right a swarm of cells crowds under the surface and sinks as a plume" loading="lazy"><figcaption>One cell (≈ 10 µm, swims up at ≈ 100 µm/s) — and the plume a crowd of them builds, a hundred times bigger.</figcaption></figure>
+    </div>
+    <figure class="fig wide film">
+      <video controls muted loop playsinline preload="metadata" poster="assets/img/bioconvection-poster.jpg"><source src="assets/media/bioconvection.mp4" type="video/mp4"></video>
+      <figcaption><b>The experiment, then the cartoon.</b> A Petri dish seen from above and a thin cell seen from the side: the plumes form in minutes (experiments H. de Maleprade and A. Huyghues-Despointes). Then the engine, drawn: one cell swims up; many gather under the free surface; the heavy layer falls in a plume. From my JMC 2026 talk.</figcaption>
+    </figure>
+    <figure class="fig wide">
+      <img src="assets/img/chlamy-exp-vs-model.jpg" alt="Experiment versus model on a zig-zag floor: side views and space–time diagrams over 60 minutes for the experiment, the 3D simulation and the 2D simulation; plumes line up with the crests" loading="lazy">
+      <figcaption>Experiment vs model on the zigzag floor (JMC 2026): side view at 60 min and space–time diagram of the plumes for the experiment (left), the 3D simulation (centre) and the 2D simulation (right). Orange lines mark the crests, dotted blue the troughs — the plumes end up on the crests in all three.</figcaption>
+    </figure>
+  </article>
+
+<!-- ============ ARTIFICIAL ACTIVE MATTER ============ -->
+  <article class="project" id="active">
+    <div class="project-text">
+      <h3>Artificial active matter — confined phoretic colloids and interacting swimmers</h3>
+      <p class="tag">synthetic microswimmers · with <a href="https://www.ladhyx.polytechnique.fr/">Sébastien Michelin</a> (LadHyX, École Polytechnique)</p>
+      <p>A phoretic colloid turns a chemical gradient at its own surface into motion. An <b>isotropic</b> one cannot swim in an unbounded fluid — nothing picks a direction — yet <b>confinement breaks the symmetry</b>: in a tube, above a threshold Péclet number, the same particle starts to self-propel (<a href="publications.html#jfm2022">JFM 2022</a>). I study which <b>secondary bifurcations</b> follow — steady, oscillatory, non-axisymmetric "spiralling" motions — with linear stability analysis of the coupled advection–diffusion / Stokes problem and direct simulations.</p>
+      <p>From one swimmer to many: with a minimal <b>three-force model</b> of a microswimmer in <a href="#basilisk">Basilisk</a> (<i>tHree</i>), I look at how hydrodynamic interactions between swimmers are screened by walls, and at the collective states they produce — phototactic drift in a light gradient, fingering, and the artificial counterpart of the <a href="#bioconvection">bioconvection</a> plumes.</p>
+      <p class="collab"><b>With</b> Sébastien Michelin (LadHyX, École Polytechnique), Ambre Palotai (M2 internship 2024–25, hydrodynamic interactions between swimmers).</p>
+    </div>
+    <div class="project-figs">
+      <figure class="fig">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-swimmer.png" aria-label="Animation: an isotropic active colloid swimming in a tube"><source src="assets/media/swimmer-pe30.mp4" type="video/mp4"></video>
+        <figcaption>An isotropic active colloid in a tube at Pe = 30: the solute it emits (colour) is swept back, and the particle swims.</figcaption>
+      </figure>
+    </div>
+  </article>
+
+<!-- ============ U-SHS / TARAS ============ -->
+  <article class="project" id="ushs">
+    <div class="project-text">
+      <h3>Underwater superhydrophobic surfaces (U-SHS) — trapped air and drag reduction</h3>
+      <p class="tag">TARAS · ANR JCJC proposal (AAPG 2027) · the <i>Salvinia</i> effect</p>
+      <p>The water fern <i>Salvinia</i> keeps a layer of air on its hairs when submerged. A textured, water-repellent wall does the same: it traps a thin layer of air, the <b>plastron</b>, between the solid and the water. The flow slips over the gas pockets, friction drops, and the idea of an air-lubricated ship hull is not far away. During my PhD I showed how much the way the surface is modelled — a homogeneous slip wall, or a textured, heterogeneous one — changes the <b>laminar–turbulent transition</b> of a channel (<a href="publications.html#jfm2019">JFM 2019</a>, <a href="publications.html#jfm2020">2020</a>, <a href="publications.html#math2021">Mathematics 2021</a>).</p>
+      <p>Most models freeze the air–water interface in place. In reality the trapped air <b>responds to the flow</b> — it deforms, it can be dragged out of its cavities — and the flow responds back. TARAS builds a <b>two-way wall model</b> for this coupling, from the microscopic gas pocket (deflection <i>η</i>, surface tension <i>σ</i>) to the transition of the whole channel, to predict when drag reduction survives and when it is lost.</p>
+      <p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Malo Walmetz (M2 internship 2026, Basilisk). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p>
+    </div>
+    <div class="project-figs">
+      <figure class="fig logo-fig"><img src="assets/img/taras-logo.png" alt="TARAS project logo: Taras surfing a wave on a Salvinia leaf whose hairs hold a layer of air" loading="lazy"><figcaption>Taras rides the wave on a <i>Salvinia</i> leaf.</figcaption></figure>
+    </div>
+    <figure class="fig wide film">
+      <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-1-poster.jpg"><source src="assets/media/taras-1.mp4" type="video/mp4"></video>
+      <figcaption><b>The idea, in 24 seconds.</b> <i>Salvinia</i> in nature, the hairs seen up close, the layer of air they hold under water — then the sketch: copy the trick on a hull and the water slips. Photographs: Barthlott <i>et al.</i>, <i>Adv. Mater.</i> 2010.</figcaption>
+    </figure>
+  </article>
+
+<!-- ============ STABILITY OF COUPLED FLOWS ============ -->
+  <article class="project" id="stability">
+    <div class="project-text">
+      <h3>Stability of coupled flows — linear stability, bifurcations, transition</h3>
+      <p class="tag">the common toolbox · global stability · nonlinear optimal perturbations</p>
+      <p>Everything on this page is a stability problem in disguise. Start from a steady <b>base state</b> — a laminar channel, a cavity flow, a suspension at rest with its cells piled under the surface, a gas pocket at equilibrium — and add a small perturbation. The <b>linearised equations</b> say whether it grows: an eigenvalue with positive real part, the wavelength and frequency of the growing mode, and its shape. In a <b>global</b> analysis the base flow is fully two- or three-dimensional and the eigenproblem is solved numerically, by Arnoldi iterations on a time-stepper (Nek5000) or with finite elements (FreeFem++/StabFem). <b>Adjoint</b> modes give receptivity and sensitivity — where a small change in the problem changes the answer most. When the linear picture is not enough, <b>nonlinear optimal perturbations</b> (a variational, adjoint-based optimisation) find the smallest disturbance that trips the flow, and continuation follows the branches through the <b>sequence of bifurcations</b>, up to transition.</p>
+      <p>Where the coupling enters, so far: a slip or textured wall (transition in channels with superhydrophobic walls); a fully three-dimensional open cavity and its successive bifurcations, compared with experiments (<a href="publications.html#jfm2018">JFM 2018</a>); the receptivity of a boundary layer to free-stream disturbances, mimicked by a synthetic forcing (<a href="publications.html#jcp2019">JCP 2019</a>); an electric field — the ionic wind of a DC corona discharge, a coupled electro-hydrodynamic problem (<a href="publications.html#aiaa2024">AIAA J. 2024</a>); a moving or deformable boundary (ALE and embedded-boundary formulations, fluid–structure interaction); and a swimming population, in <a href="#bioconvection">bioconvection</a>.</p>
+      <p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Jean-Christophe Loiseau, François Lusseyran and Luc Pastur (open cavity), Michele Alessandro Bucci, David Fabre, Franck Plouraboué and Christophe Airiau (IMFT, Toulouse), Pier Giuseppe Ledda (Cagliari).</p>
+    </div>
+    <div class="project-figs">
+      <figure class="fig">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-cavity-poster.jpg" aria-label="Animation: helical vortices in a three-dimensional open cavity flow"><source src="assets/media/cavity-helicity.mp4" type="video/mp4"></video>
+        <figcaption>Helical structures in the fully three-dimensional open cavity flow, after its successive bifurcations (JFM 2018).</figcaption>
+      </figure>
+    </div>
+  </article>
+
+<!-- ============ BASILISK ============ -->
+  <article class="project" id="basilisk">
+    <div class="project-text">
+      <h3>Tools, in Basilisk — building blocks for the stability of coupled flows</h3>
+      <p class="tag">open source · <a href="https://basilisk.fr/sandbox/fpicella/README">my sandbox on basilisk.fr</a></p>
+      <p><a href="https://basilisk.fr/">Basilisk</a> is the free solver for partial differential equations on adaptive grids developed at ∂'Alembert by Stéphane Popinet. Its wiki, the <i>sandbox</i>, is where users publish their code, with the results compiled and run on the server: every page is a reproducible test case. I use Basilisk to put the <b>coupled flows</b> above into one framework, and I <b>develop the tools their stability analysis needs</b> — then share them so that students and colleagues can build on them.</p>
+      <div class="toolbox">
+        <div><b>Moving embedded boundaries</b> Forces and torques on bodies that move with the flow (re-adapted from A. Ghigo's implementation): sedimenting, force- and torque-free cylinders in shear flow.</div>
+        <div><b>Slip and Robin conditions</b> Navier slip on embedded geometries, and Robin conditions with A. Palotai and M. Walmetz — the wall model of <a href="#ushs">U-SHS</a>. Validated against Legendre <i>et al.</i> 2009.</div>
+        <div><b>Plastron</b> A cylinder wrapped in a gas bubble, a notched cylinder holding a bubble: two-phase flow around a superhydrophobic body.</div>
+        <div><b>tHree swimmers</b> A three-force model of a microswimmer: single swimmer, phototaxis in a light gradient, fingering, and <a href="#bioconvection">bioconvection</a> plumes.</div>
+        <div><b>Selective frequency damping</b> Unstable base states for a stability analysis (Åkervik <i>et al.</i> 2006): Kármán street, sphere wake, Kelvin–Helmholtz — by <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>. <span class="badge">picture of the month</span></div>
+        <div><b>Validation and pedagogy</b> A quantitative Kármán test (drag, lift, Strouhal number against the literature), a darcs tutorial, 1D advection–diffusion, an instrumented plane Couette flow.</div>
+      </div>
+      <p class="collab"><b>With</b> the students of the <a href="positions.html#alumni">alumni</a> page, each with a sandbox of their own: <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>, <a href="https://basilisk.fr/sandbox/apalotai/README">Ambre Palotai</a>, <a href="https://basilisk.fr/sandbox/walmetz/README">Malo Walmetz</a>; Arthur Ghigo (embedded boundaries); Stéphane Popinet (∂'Alembert).</p>
+    </div>
+    <div class="project-figs">
+      <figure class="fig">
+        <img src="assets/img/research-coupled.png" alt="Flow past a cylinder computed with Basilisk: vorticity in red and blue, velocity vectors and streamlines" loading="lazy">
+        <figcaption>Flow past an embedded cylinder in Basilisk — vorticity, velocity and streamlines: the starting point of the slip and plastron cases.</figcaption>
+      </figure>
+    </div>
+    <figure class="fig wide film">
+      <video controls muted loop playsinline preload="metadata" poster="assets/img/basilisk-plumes-poster.jpg"><source src="assets/media/basilisk-plumes.mp4" type="video/mp4"></video>
+      <figcaption><b>Bioconvection, swimmer by swimmer.</b> A few hundred <i>tHree</i> swimmers in Basilisk, heavier than the fluid and swimming up: the uniform suspension gathers under the top wall, the layer becomes unstable and falls in plumes — the agent-resolved counterpart of the continuum model, from <a href="https://basilisk.fr/sandbox/fpicella/microswimmer_tHree_forces/plumes_x_periodic.c">plumes_x_periodic.c</a>. Played at 2× speed.</figcaption>
+    </figure>
+  </article>
+
+</section>
+
+</main>
+
+<footer class="wrap">
+  <a class="portrait small" href="index.html" aria-label="Home"><img src="assets/img/portrait.jpg" alt="" width="56" height="56"></a>
+  <p>© 2026 Francesco Picella · <a href="index.html#contact">contact</a> · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
+</footer>
+
+</body>
+</html>

@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Francesco Picella</title>
-<meta name="description" content="Francesco Picella's personal website — Maître de Conférences (Assistant Professor) in fluid mechanics at Institut Jean Le Rond ∂'Alembert, Sorbonne Université, Paris. Hydrodynamic instabilities, active fluids, biophysics, transition to turbulence.">
+<meta name="description" content="Francesco Picella's personal website — Maître de Conférences (Assistant Professor) in fluid mechanics at Institut Jean Le Rond ∂'Alembert, Sorbonne Université, Paris. Hydrodynamic stability, active fluids, bioconvection, superhydrophobic surfaces, numerical simulation.">
 <meta name="author" content="Francesco Picella">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0f1115">
 <link rel="canonical" href="https://francescopicella.com/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Francesco Picella">
-<meta property="og:description" content="Fluid mechanics · Institut ∂'Alembert, Sorbonne Université. Instabilities, active fluids, biophysics, transition.">
+<meta property="og:description" content="Fluid mechanics · Institut ∂'Alembert, Sorbonne Université. Hydrodynamic stability, active fluids, bioconvection, superhydrophobic surfaces.">
 <meta property="og:url" content="https://francescopicella.com/">
 <meta property="og:image" content="https://francescopicella.com/assets/img/portrait.jpg">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -32,7 +32,7 @@
   "worksFor": { "@type": "Organization", "name": "Institut Jean Le Rond ∂'Alembert, Sorbonne Université / CNRS", "url": "https://www.dalembert.upmc.fr/" },
   "affiliation": { "@type": "CollegeOrUniversity", "name": "Sorbonne Université" },
   "address": { "@type": "PostalAddress", "streetAddress": "4 place Jussieu, Tour 55-65, bureau 520", "postalCode": "75005", "addressLocality": "Paris", "addressCountry": "FR" },
-  "knowsAbout": ["fluid mechanics", "hydrodynamic stability", "transition to turbulence", "active fluids", "biophysics", "microswimmers", "bioconvection", "superhydrophobic surfaces", "drag reduction", "numerical simulation"],
+  "knowsAbout": ["fluid mechanics", "hydrodynamic stability", "transition to turbulence", "active fluids", "biophysics", "microswimmers", "bioconvection", "superhydrophobic surfaces", "drag reduction", "numerical simulation", "Basilisk"],
   "identifier": { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0003-0630-1528" },
   "sameAs": [
     "https://orcid.org/0000-0003-0630-1528",
@@ -40,6 +40,7 @@
     "https://www.researchgate.net/profile/Picella-Francesco",
     "https://dblp.org/pid/242/9693.html",
     "https://github.com/fpicella",
+    "https://basilisk.fr/sandbox/fpicella/README",
     "https://www.youtube.com/watch?v=k3ipk559rK4",
     "https://sites.google.com/view/francescopicella"
   ]
@@ -49,7 +50,7 @@
 <body>
 
 <header id="top" class="hero wrap">
-  <a class="portrait" href="#top" aria-label="Home">
+  <a class="portrait" href="index.html" aria-label="Home">
     <img src="assets/img/portrait.jpg" alt="Francesco Picella" width="220" height="220">
   </a>
   <div class="hero-text">
@@ -59,11 +60,12 @@
       <span>Maître de Conférences (Assistant Professor) · Fluid mechanics<br>
       <a href="https://www.dalembert.upmc.fr/">Institut Jean Le Rond ∂'Alembert</a>, Sorbonne Université / CNRS, Paris</span>
     </p>
-    <p class="intro">Fluid mechanician. I use <b>numerical simulation</b> and <b>hydrodynamic stability</b> to understand how flows coupled to living or active matter organise themselves and lose their symmetry — swimming micro-algae, phoretic colloids, air-lubricated walls. Current focus: <b>bioconvection</b> of <i>Chlamydomonas</i>, <b>confined microswimmers</b>, <b>superhydrophobic drag reduction</b>.</p>
+    <p class="intro">Fluid mechanician. I use <b>hydrodynamic stability</b> and <b>numerical simulation</b> to understand how flows coupled to something else — living cells, active colloids, a layer of trapped air, an electric field, a moving wall — organise themselves and lose their symmetry. Current fronts: <a href="research.html#bioconvection">bioconvection</a> of micro-algae, <a href="research.html#active">artificial active matter</a>, <a href="research.html#ushs">underwater superhydrophobic surfaces</a>, and the <a href="research.html#stability">stability of coupled flows</a>, with tools I build in <a href="research.html#basilisk">Basilisk</a>.</p>
     <p class="iconlinks">
       <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>
       <a href="https://hal.science/search/index/?q=%22Francesco+Picella%22&sort=producedDate_tdate+desc">HAL</a>
       <a href="https://orcid.org/0000-0003-0630-1528">ORCID</a>
+      <a href="https://basilisk.fr/sandbox/fpicella/README">Basilisk sandbox</a>
       <a href="https://github.com/fpicella">GitHub</a>
       <a href="https://www.researchgate.net/profile/Picella-Francesco">ResearchGate</a>
       <!-- <a href="assets/cv-picella.pdf">CV</a>  (drop assets/cv-picella.pdf and uncomment) -->
@@ -73,358 +75,74 @@
   </div>
 </header>
 
-<nav class="topnav wrap" aria-label="Sections">
-  <a href="#news">News</a>
-  <a href="#projects">Projects</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#media">Talks &amp; media</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#students">Open positions</a>
-  <a href="#alumni">Alumni</a>
-  <a href="#contact">Contact</a>
+<nav class="topnav wrap" aria-label="Pages">
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="news.html">News</a>
+  <a href="talks.html">Talks &amp; media</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="positions.html">Open positions</a>
 </nav>
 
 <main class="wrap">
 
-<!-- ============ NEWS ============
-  One <li class="news-item"> per entry, newest first. Optional <figure class="media"> with
-    an image  : <img src="assets/media/xxx.jpg">
-    a video   : <video controls preload="metadata"><source src="assets/media/xxx.mp4" type="video/mp4"></video>
-    YouTube   : <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="..." allowfullscreen loading="lazy"></iframe></div>
--->
+<!-- ============ RESEARCH AT A GLANCE ============  one card per project; the full story is on research.html -->
+<section id="research">
+  <h2>Research</h2>
+  <div class="teasers">
+    <figure class="teaser">
+      <img src="assets/img/bioconvection-teaser.jpg" alt="Bioconvection plumes of micro-algae: Petri dish seen from above and one plume seen from the side" loading="lazy">
+      <figcaption><b>Bioconvection</b> Swimming micro-algae pile up under the surface and fall back as plumes. How a shaped floor or the light selects the pattern — and why it is an instability. <a class="cover more" href="research.html#bioconvection">Read more →</a></figcaption>
+    </figure>
+    <figure class="teaser">
+      <img src="assets/img/research-swimmer.png" alt="An isotropic active colloid swimming in a tube" loading="lazy">
+      <figcaption><b>Artificial active matter</b> Phoretic colloids that cannot swim alone start to swim once confined; many of them interact through the fluid. Bifurcations of synthetic swimmers. <a class="cover more" href="research.html#active">Read more →</a></figcaption>
+    </figure>
+    <figure class="teaser">
+      <img src="assets/img/ushs-teaser.jpg" alt="A water drop on a Salvinia leaf" loading="lazy">
+      <figcaption><b>Underwater superhydrophobic surfaces</b> The <i>Salvinia</i> trick: a layer of air trapped on a textured wall lets water slip. When does the air survive the flow? <a class="cover more" href="research.html#ushs">Read more →</a></figcaption>
+    </figure>
+    <figure class="teaser">
+      <img src="assets/img/research-cavity-poster.jpg" alt="Helical vortices in a three-dimensional open cavity flow" loading="lazy">
+      <figcaption><b>Stability of coupled flows</b> Linear and global stability, bifurcation sequences and transition when the flow is coupled to a wall, a field, a structure or a population of cells. <a class="cover more" href="research.html#stability">Read more →</a></figcaption>
+    </figure>
+    <figure class="teaser">
+      <img src="assets/img/basilisk-plumes-poster.jpg" alt="Bioconvection plumes simulated with Basilisk" loading="lazy">
+      <figcaption><b>Tools, in Basilisk</b> Moving embedded boundaries, slip and Robin conditions, swimmers, selective frequency damping — building blocks for the stability of coupled flows, shared on my sandbox. <a class="cover more" href="research.html#basilisk">Read more →</a></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ LATEST NEWS ============  the three most recent items of news.html -->
 <section id="news">
-  <h2>News <a class="totop" href="#top">top</a></h2>
+  <h2>Latest news</h2>
   <ul class="news">
     <li class="news-item">
-      <time datetime="2027-07">Jul 2027</time>
-      <div><p><b>Invited lecture</b> at the Cargèse summer school <a href="https://assemblinglife.sciencesconf.org/">Assembling Life: Synthetic Cells, Dynamic Matter &amp; Multicellularity</a> (19–31 July 2027), in the session <i>Single-cell collective behavior</i>: <i>Collective behaviour arising from single-cell hydrodynamics</i>.</p></div>
+      <time datetime="2026-11">Nov 2026</time>
+      <div><p><b>Picture of the month on basilisk.fr</b> — the work of <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>, a former student, is the picture of the month on the <a href="https://basilisk.fr/">Basilisk</a> front page: selective frequency damping stabilising a von Kármán vortex street. Well done, Louise!</p></div>
     </li>
     <li class="news-item">
       <time datetime="2026-11">Nov 2026</time>
-      <div>
-        <p>Visiting <a href="https://scholar.google.com/citations?user=J_v4ayUAAAAJ">Julien Lemetayer</a> and colleagues at <a href="https://www.imft.fr/">IMFT</a> (Institut de Mécanique des Fluides de Toulouse).</p>
-        <figure class="media annot">
-          <div class="annot-box">
-            <img src="assets/media/lemetayer-2026.jpg" alt="Polaroid of Francesco Picella and Julien Lemetayer in front of the IMFT wind tunnel" loading="lazy">
-            <span class="hand">IMFT's wind tunnel!</span>
-            <svg class="hand-arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M58 26 C 70 30, 80 45, 84 62" fill="none" stroke="#f0f921" stroke-width="2.2" stroke-linecap="round"/><path d="M78 56 L84 62 L88 54" fill="none" stroke="#f0f921" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <figcaption>IMFT, Toulouse, November 2026.</figcaption>
-        </figure>
-      </div>
+      <div><p>Visiting <a href="https://scholar.google.com/citations?user=J_v4ayUAAAAJ">Julien Lemetayer</a> and colleagues at <a href="https://www.imft.fr/">IMFT</a>, Toulouse — <a href="news.html#imft-2026">picture</a>.</p></div>
     </li>
     <li class="news-item">
       <time datetime="2026-10">Oct 2026</time>
-      <div>
-        <p>Talk at <b>JMC 2026</b>, the Journées de la Matière Condensée (SFP), in Toulouse — <i>Sink or swim: how microhydrodynamics drives bioconvection patterns</i> — on <b>bioconvection of micro-algae over a structured bottom</b>: how the plumes of a swimming <i>Chlamydomonas</i> suspension respond to a zigzag bathymetry, confronting 3D continuum simulations with the experiments of <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a>, with whom I work on this at ∂'Alembert — and why the pattern selection looks like an instability. See the <a href="#chlamy">Chlamy project</a>.</p>
-        <figure class="media">
-          <img src="assets/media/jmc2026.png" alt="Gala evening of the JMC 2026 in Toulouse" loading="lazy">
-          <figcaption>Gala evening of the JMC 2026, Toulouse, 29 October 2026 — with <a href="https://scholar.google.com/citations?user=g7pw6gIAAAAJ">Adrien Bussonnière</a> and <a href="https://scholar.google.com/citations?user=v2ZPgW8AAAAJ">Axel Huerre</a> (MSC, Université Paris Cité).</figcaption>
-        </figure>
-      </div>
+      <div><p>Talk at <b>JMC 2026</b> (Journées de la Matière Condensée, Toulouse): <i>Sink or swim: how microhydrodynamics drives bioconvection patterns</i>, on the <a href="research.html#bioconvection">bioconvection</a> of micro-algae over a structured floor, with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a>.</p></div>
     </li>
-    <li class="news-item">
-      <time datetime="2026-10">Oct 2026</time>
-      <div><p>Two numerical-modelling internships (M1/M2) open for spring 2027, on the <a href="#chlamy">Chlamy</a> and <a href="#taras">TARAS</a> projects — see <a href="#students">Open positions</a>.</p></div>
-    </li>
-    <li class="news-item">
-      <time datetime="2026-08">Aug 2026</time>
-      <div>
-        <p>Visited <a href="https://www.sergiopicella.com/">S. Picella</a> at EPFL, Lausanne. Many thanks for the warm welcome and the lab tour.</p>
-        <figure class="media">
-          <img src="assets/media/epfl-2026.jpg" alt="A wall of ski bindings, at EPFL" loading="lazy">
-          <figcaption>EPFL, August 2026 — a wall of ski bindings, the kind of collection only a mechanics lab would keep.</figcaption>
-        </figure>
-      </div>
-    </li>
-    <li class="news-item">
-      <time datetime="2026-06">Jun 2026</time>
-      <div><p><b>Invited talk</b> at the Cercle Pierre de Jumièges of the <a href="https://www.arts-et-metiers.asso.fr/events/212939">Société des ingénieurs Arts &amp; Métiers</a>, Paris — <i>Formes futures : ce que la nature révèle à l'ingénieur</i>: gas lubrication for maritime transport, alongside fellow laureates of the Prix Pierre Bézier.</p></div>
-    </li>
-    <li class="news-more"><details><summary>Older news</summary><ul class="news">
-    <li class="news-item">
-      <time datetime="2026-05">May 2026</time>
-      <div>
-        <p>Joined the <a href="https://blog.espci.fr/mephy/">GDR MePhy</a> (Mécanique et Physique des systèmes complexes) and attended the MePhy meeting in Carry-le-Rouet.</p>
-        <figure class="media">
-          <img src="assets/media/mephy-2026.jpg" alt="Group photo of the MePhy meeting on the seashore at Carry-le-Rouet" loading="lazy">
-          <figcaption>MePhy meeting, Carry-le-Rouet, May 2026.</figcaption>
-        </figure>
-      </div>
-    </li>
-    <li class="news-item">
-      <time datetime="2026">2026</time>
-      <div><p>New paper with M. Givaudan and H. de Maleprade: <a href="https://doi.org/10.5802/crphys.268"><i>Roll formation in a bio-active fluid</i></a>, Comptes Rendus. Physique.</p></div>
-    </li>
-    <li class="news-item">
-      <time datetime="2026-02">Feb 2026</time>
-      <div><p><a href="https://pgledda.github.io/">Pier Giuseppe Ledda</a> (University of Cagliari) was an <b>invited professor</b> at ∂'Alembert, 1–15 February 2026, funded by a <b>BRIDGE grant</b> from Sorbonne Université. We worked on the modelling of complex interfaces in biological systems.</p></div>
-    </li>
-    <li class="news-item">
-      <time datetime="2024">2024</time>
-      <div><p>Paper with D. Fabre and F. Plouraboué on ionic wind from DC-corona discharges, <i>AIAA Journal</i>.</p></div>
-    </li>
-    <li class="news-item">
-      <time datetime="2022-09">Sept 2022</time>
-      <div><p>Joined Sorbonne Université as Maître de Conférences, Institut ∂'Alembert (FCIH team).</p></div>
-    </li>
-    </ul></details></li>
   </ul>
+  <p class="section-more"><a href="news.html">All news →</a></p>
 </section>
 
-<!-- ============ PROJECTS ============ -->
-<section id="projects">
-  <h2>Projects <a class="totop" href="#top">top</a></h2>
-
-  <article class="project" id="taras">
-    <div class="project-text">
-      <h3>TARAS — Trapped Air Responding to the flow on Anti-drag Surfaces</h3>
-      <p class="tag">ANR JCJC proposal (AAPG 2027) · superhydrophobic drag reduction</p>
-      <p>Superhydrophobic surfaces trap a thin layer of air, the <b>plastron</b>, between the solid and the water. The flow slips over the gas pockets, friction drops, and the idea of an air-lubricated ship hull is not far away. Most models freeze the air–water interface in place; in reality the trapped air <b>responds to the flow</b> — it deforms, it can be dragged out of its cavities — and the flow responds back.</p>
-      <p>TARAS builds a <b>two-way wall model</b> for this coupling, from the microscopic gas pocket (deflection <i>η</i>, surface tension <i>σ</i>) to the laminar–turbulent transition of the whole channel, to predict when drag reduction survives and when it is lost.</p>
-      <p class="muted">Internship open for 2027 — see <a href="#students">Open positions</a>.</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig logo-fig"><img src="assets/img/taras-logo.png" alt="TARAS project logo: Taras surfing a wave on a Salvinia leaf whose hairs hold a layer of air" loading="lazy"><figcaption>Taras rides the wave on a <i>Salvinia</i> leaf — the fern that keeps a layer of air on its hairs under water.</figcaption></figure>
-    </div>
-    <div class="films">
-      <figure class="fig">
-        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-1-poster.jpg"><source src="assets/media/taras-1.mp4" type="video/mp4"></video>
-        <figcaption><b>1 · The idea.</b> <i>Salvinia</i> keeps a layer of air on its hairs under water; copy the trick on a hull and the water slips.</figcaption>
-      </figure>
-      <figure class="fig">
-        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-2-poster.jpg"><source src="assets/media/taras-2.mp4" type="video/mp4"></video>
-        <figcaption><b>2 · The problem.</b> Pressure and shear bend the interface until it unpins: the pocket wets, the slip is gone.</figcaption>
-      </figure>
-      <figure class="fig">
-        <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-3-poster.jpg"><source src="assets/media/taras-3.mp4" type="video/mp4"></video>
-        <figcaption><b>3 · A way back.</b> Electrolysis at the bottom of the texture regrows the plastron (Lloyd et al. 2021).</figcaption>
-      </figure>
-    </div>
-  </article>
-
-  <article class="project" id="chlamy">
-    <div class="project-text">
-      <h3>Chlamy — bioconvection and oxygen depletion in micro-algae suspensions</h3>
-      <p class="tag">with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a> (∂'Alembert) · bio-active fluids</p>
-      <p><i>Chlamydomonas</i> are swimming micro-algae, slightly denser than water, that swim upwards. Gathered at the top, the suspension becomes top-heavy and overturns into <b>plumes and rolls</b>: bioconvection. In experiments at ∂'Alembert, Hélène changes the environment — the light, the bathymetry of the cell — and the plumes answer: with a zigzag bottom they form under the crests rather than in the troughs.</p>
-      <p>On my side I write <b>continuum models</b> of the suspension and simulate them in 3D. Without noise the model lingers for a very long time before organising; with noise it falls at once into the state seen in experiments, which points to an <b>instability</b> that we now analyse with the tools of hydrodynamic stability. Next: coupling the cells' own <b>oxygen consumption</b> to the flow — what happens when the algae make their water anoxic.</p>
-      <p class="muted">Internship open for 2027 — see <a href="#students">Open positions</a>.</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig"><img src="assets/img/chlamy-composite.jpg" alt="A single Chlamydomonas cell beating its two flagella; to its right a swarm of cells crowds under the surface and sinks as a plume" loading="lazy"><figcaption>One cell (≈ 10 µm, swims up at ≈ 100 µm/s) — and the plume a crowd of them builds, a hundred times bigger.</figcaption></figure>
-    </div>
-    <figure class="fig wide">
-      <img src="assets/img/chlamy-exp-vs-model.jpg" alt="Experiment versus model on a zig-zag floor: side views and space–time diagrams over 60 minutes for the experiment, the 3D simulation and the 2D simulation; plumes line up with the crests" loading="lazy">
-      <figcaption>Experiment vs model on the zig-zag floor (JMC 2026): side view at 60 min and space–time diagram of the plumes for the experiment (left), the 3D simulation (centre) and the 2D simulation (right). Orange lines mark the crests, dotted blue the troughs — the plumes end up on the crests in all three. <span class="muted">Video version coming.</span></figcaption>
-    </figure>
-  </article>
-</section>
-
-<!-- ============ RESEARCH THEMES ============ -->
-<section id="research">
-  <h2>Research <a class="totop" href="#top">top</a></h2>
-  <p class="muted">The two projects above are the active fronts. Two more threads run alongside them.</p>
-
-  <article class="row">
-    <figure class="fig">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-swimmer.png" aria-label="Animation: an isotropic active colloid swimming in a tube">
-        <source src="assets/media/swimmer-pe30.mp4" type="video/mp4">
-      </video>
-    </figure>
-    <div class="row-text">
-      <h3>Confined active colloids &amp; phoretic swimmers</h3>
-      <p>An isotropic active particle cannot swim in an unbounded fluid; <b>confinement breaks the symmetry</b> and selects swimming modes. I study which secondary bifurcations follow — steady, oscillatory, non-axisymmetric "spiralling" — with linear stability analysis and direct simulations. With <a href="https://www.ladhyx.polytechnique.fr/">S. Michelin</a> (LadHyX, École Polytechnique).</p>
-    </div>
-  </article>
-
-  <article class="row">
-    <figure class="fig">
-      <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-cavity-poster.jpg" aria-label="Animation: helical vortices in a three-dimensional open cavity flow">
-        <source src="assets/media/cavity-helicity.mp4" type="video/mp4">
-      </video>
-    </figure>
-    <div class="row-text">
-      <h3>Stability of coupled flows</h3>
-      <p>Global stability and <b>bifurcation sequences</b> where a flow is coupled to something else: an electric field (corona discharges, electro-hydrodynamics), a three-dimensional open cavity, a moving boundary (fluid–structure interaction). The same toolbox — base flows, eigenmodes, nonlinear optimal perturbations — that serves the <a href="#taras">TARAS</a> and <a href="#chlamy">Chlamy</a> projects.</p>
-    </div>
-  </article>
-</section>
-
-<!-- ============ PUBLICATIONS ============ -->
-<section id="publications">
-  <h2>Publications <a class="totop" href="#top">top</a></h2>
-  <p class="muted">Peer-reviewed articles, newest first. Full list on <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>, open-access versions on <a href="https://hal.science/search/index/?q=%22Francesco+Picella%22&sort=producedDate_tdate+desc">HAL</a>, ORCID <a href="https://orcid.org/0000-0003-0630-1528">0000-0003-0630-1528</a>.</p>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2026-crphys.jpg" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.5802/crphys.268">Roll formation in a bio-active fluid</a></h3>
-      <p>How a suspension of swimming micro-organisms self-organises into <b>convective rolls</b>, modelled as a bio-active fluid.</p>
-      <p class="cite">Givaudan M., <b>Picella F.</b>, de Maleprade H., <i>Comptes Rendus. Physique</i> (2026). <a href="https://doi.org/10.5802/crphys.268">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2024-aiaa.png" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.2514/1.J063325">Numerical simulations of ionic wind induced by positive DC-corona discharges</a></h3>
-      <p>Coupled <b>electro-hydrodynamic simulations</b> of the ionic wind produced by a positive corona discharge.</p>
-      <p class="cite"><b>Picella F.</b>, Fabre D., Plouraboué F., <i>AIAA Journal</i> (2024). <a href="https://doi.org/10.2514/1.J063325">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2022-jfm-colloid.png" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.1017/jfm.2021.1081">Confined self-propulsion of an isotropic active colloid</a></h3>
-      <p>A uniformly active particle that cannot swim in free space <b>starts to self-propel when confined</b>: confinement, not particle asymmetry, breaks the symmetry.</p>
-      <p class="cite"><b>Picella F.</b>, Michelin S., <i>Journal of Fluid Mechanics</i> 933, A27 (2022). <a href="https://doi.org/10.1017/jfm.2021.1081">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2021-mathematics.jpg" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.3390/math9010053">Variational nonlinear optimization in fluid dynamics: the case of a channel flow with superhydrophobic walls</a></h3>
-      <p><b>Nonlinear optimal perturbations</b> in a channel with slippery walls, computed with a variational (adjoint) approach.</p>
-      <p class="cite">Cherubini S., <b>Picella F.</b>, Robinet J.-Ch., <i>Mathematics</i> 9(1), 53 (2021). <a href="https://doi.org/10.3390/math9010053">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2020-jfm-shs.jpg" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.1017/jfm.2020.516">On the influence of the modelling of superhydrophobic surfaces on laminar–turbulent transition</a></h3>
-      <p>Whether the surface is modelled as a homogeneous slip wall or as a <b>textured, heterogeneous one</b> changes the transition scenario.</p>
-      <p class="cite"><b>Picella F.</b>, Robinet J.-Ch., Cherubini S., <i>Journal of Fluid Mechanics</i> 901, A15 (2020). <a href="https://doi.org/10.1017/jfm.2020.516">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2019-jfm-slip.jpg" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.1017/jfm.2019.740">Laminar–turbulent transition in channel flow with superhydrophobic surfaces modelled as a partial slip wall</a></h3>
-      <p><b>Slip delays transition</b>, but by how much depends on the path the flow takes to turbulence.</p>
-      <p class="cite"><b>Picella F.</b>, Robinet J.-Ch., Cherubini S., <i>Journal of Fluid Mechanics</i> 881, 462–497 (2019). <a href="https://doi.org/10.1017/jfm.2019.740">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2019-jcp.png" alt="" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.1016/j.jcp.2019.04.011">A synthetic forcing to trigger laminar–turbulent transition in parallel wall bounded flows via receptivity</a></h3>
-      <p>A numerical method that <b>mimics receptivity to free-stream disturbances</b> with a synthetic forcing, to trigger transition in a controlled way.</p>
-      <p class="cite"><b>Picella F.</b>, Bucci M. A., Cherubini S., Robinet J.-Ch., <i>Journal of Computational Physics</i> 393, 92–116 (2019). <a href="https://doi.org/10.1016/j.jcp.2019.04.011">doi</a></p>
-    </div>
-  </article>
-
-  <article class="pub">
-    <figure class="thumb"><img src="assets/pubs/2018-jfm-cavity.jpg" alt="Three-dimensional unstable mode of the open cavity flow" loading="lazy"></figure>
-    <div>
-      <h3><a href="https://doi.org/10.1017/jfm.2018.169">Successive bifurcations in a fully three-dimensional open cavity flow</a></h3>
-      <p>The <b>sequence of bifurcations</b> of a 3D open cavity flow, from global stability analysis and simulations, compared with experiments.</p>
-      <p class="cite"><b>Picella F.</b>, Loiseau J.-Ch., Lusseyran F., Robinet J.-Ch., Cherubini S., Pastur L. R., <i>Journal of Fluid Mechanics</i> 844, 855–877 (2018). <a href="https://doi.org/10.1017/jfm.2018.169">doi</a></p>
-    </div>
-  </article>
-</section>
-
-<!-- ============ TALKS & MEDIA ============ -->
-<section id="media">
-  <h2>Talks &amp; media <a class="totop" href="#top">top</a></h2>
-  <p class="muted">Seminars, interviews, outreach, and a few pictures from the road.</p>
-  <details class="more"><summary>Show the gallery</summary>
-  <div class="gallery">
-    <figure class="card">
-      <img src="assets/media/greve-jussieu-2026.jpg" alt="Où est Charlie ? Blocus à Jussieu — an AI-generated, Where's-Wally-style illustration of a strike at Jussieu" loading="lazy">
-      <figcaption><b>C'est la grève !</b> — <i>Où est Charlie ? Blocus à Jussieu</i>. Image generated with AI.</figcaption>
-    </figure>
-    <figure class="card">
-      <div class="yt" data-id="k3ipk559rK4" data-title="Controlling laminar-to-turbulent transition with superhydrophobic surfaces — seminar at Institut ∂'Alembert">
-        <img src="assets/media/seminar-2022-poster.jpg" alt="Slide from the seminar: three couplings with hydrodynamics" loading="lazy">
-        <button type="button" class="play" aria-label="Play the video">▶</button>
-      </div>
-      <figcaption><b>Controlling laminar-to-turbulent transition with superhydrophobic surfaces</b> — seminar at Institut ∂'Alembert, 2022. <a href="https://www.youtube.com/watch?v=k3ipk559rK4">YouTube</a></figcaption>
-    </figure>
-    <figure class="card">
-      <div class="yt"><iframe src="https://www.youtube-nocookie.com/embed/iLppgyHi-Mo" title="Interview for Cookies and Science" loading="lazy" allowfullscreen></iframe></div>
-      <figcaption><b>Interview for Cookies and Science</b> — a talk for students about research in fluid mechanics. <a href="https://youtu.be/iLppgyHi-Mo">YouTube</a></figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/mephy-2026.jpg" alt="Group photo of the MePhy meeting at Carry-le-Rouet" loading="lazy">
-      <figcaption>GDR MePhy meeting, Carry-le-Rouet, May 2026.</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/jmc2026.png" alt="Gala evening at JMC 2026, Toulouse" loading="lazy">
-      <figcaption>JMC 2026, Toulouse — gala evening with <a href="https://scholar.google.com/citations?user=g7pw6gIAAAAJ">Adrien Bussonnière</a> and <a href="https://scholar.google.com/citations?user=v2ZPgW8AAAAJ">Axel Huerre</a> (MSC).</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/lotus-2019.jpg" alt="Francesco Picella looking at a lotus leaf" loading="lazy">
-      <figcaption>Field work: checking the lotus effect on the real thing (2019).</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/field-research-2023.jpg" alt="Francesco Picella by the sea with a slice of pizza and a beer" loading="lazy">
-      <figcaption>Field research with S. Picella, December 2023.</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/neouvielle.jpg" alt="A van at night, lit from inside, with someone cooking in the back" loading="lazy">
-      <figcaption>Field research in the Néouvielle National Park (Pyrénées), with <a href="https://www.instagram.com/hugo.serraz/">H. Serraz</a>.</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/ancizan-2026.jpg" alt="Francesco Picella leaning on a small van in the Pyrenees" loading="lazy">
-      <figcaption>Field research with Lina, Hourquette d'Ancizan, summer 2026.</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/ariege-2026.jpg" alt="Ski touring on a ridge above snowy Pyrenean peaks" loading="lazy">
-      <figcaption>Field campaign in Ariège, France, March 2026.</figcaption>
-    </figure>
-    <figure class="card">
-      <img src="assets/media/epfl-2026.jpg" alt="A wall of ski bindings, at EPFL" loading="lazy">
-      <figcaption>Visiting S. Picella at EPFL, August 2026.</figcaption>
-    </figure>
-  </div>
-  </details>
-</section>
-
-<!-- ============ TEACHING ============ -->
-<section id="teaching">
-  <h2>Teaching <a class="totop" href="#top">top</a></h2>
-  <p>Sorbonne Université, Faculté des Sciences et Ingénierie — all my teaching is in the first semester. Course material and assignments are on <a href="https://moodle-sciences-26.sorbonne-universite.fr/">Moodle Sciences</a> (students only).</p>
-  <ul class="courses">
-    <li><b><a href="https://su-mecanique.github.io/master-mecanique/page/um5mef02/">UM5MEF02 — Pratique de la simulation numérique</a></b> · M2, 3 ECTS, coordinator. Hands-on CFD with OpenFOAM: finite volumes from 1D advection up to incompressible Navier–Stokes, turbulence and flows around bodies, every step checked against theory or the literature. <a href="https://moodle-sciences-26.sorbonne-universite.fr/">Moodle</a></li>
-    <li><b><a href="https://su-mecanique.github.io/master-mecanique/page/um4mef11/">UM4MEF11 — Méthodes numériques en mécanique des fluides 1</a></b> · M1, 3 ECTS, coordinator. Finite-difference methods for the PDEs of fluid mechanics: accuracy and stability, explicit and implicit time stepping, diffusion and convection schemes, a 2D convection–diffusion project in Python/Jupyter. <a href="https://moodle-sciences-26.sorbonne-universite.fr/">Moodle</a></li>
-    <li><b>UL2ME007</b> and <b>UL2ME114</b> · L2 Mécanique — tutorials and lab work. <a href="https://moodle-sciences-26.sorbonne-universite.fr/">Moodle</a></li>
-  </ul>
-</section>
-
-<!-- ============ STUDENTS ============ -->
-<section id="students">
-  <h2>Open positions <a class="totop" href="#top">top</a></h2>
-  <p>I regularly supervise M1/M2 internships (February to September) on numerical modelling of active and bio-active fluids, instabilities and transition. If you want to join, send me a CV and a few lines about what you have done — and what you would like to do.</p>
-  <div class="offers">
-    <figure class="card">
-      <a href="https://claude.ai/artifact/U2Kz77cH1VdTKDFwJqchkP"><img src="assets/stages/poster-chlamy.png" alt="Internship poster: Out of breath — bioconvection and oxygen depletion" loading="lazy" onerror="this.src='assets/img/chlamy-composite.jpg';this.onerror=null"></a>
-      <figcaption><b>Internship 2027 — Chlamy</b>: bioconvection and oxygen depletion in micro-algae suspensions (numerical modelling, M1/M2). <a href="https://claude.ai/artifact/U2Kz77cH1VdTKDFwJqchkP">poster</a></figcaption>
-    </figure>
-    <figure class="card">
-      <a href="https://claude.ai/artifact/U2Kz77cH1VdTKDFwJqchkP"><img src="assets/stages/poster-taras.png" alt="Internship poster: Surfing on air — TARAS" loading="lazy" onerror="this.src='assets/img/taras-composite.jpg';this.onerror=null"></a>
-      <figcaption><b>Internship 2027 — TARAS</b>: trapped air responding to the flow on anti-drag surfaces (numerical modelling, M1/M2). <a href="https://claude.ai/artifact/U2Kz77cH1VdTKDFwJqchkP">poster</a></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- Former students: one <li> per student — name (link to personal page / LinkedIn), programme, year, topic. -->
-<section id="alumni">
-  <h2>Former students <a class="totop" href="#top">top</a></h2>
-  <ul class="alumni">
-    <li><b>Malo Walmetz</b> — Arts et Métiers, final-year internship, March–August 2026: <i>Drag reduction by gas lubrication</i> (Basilisk simulations).</li>
-  </ul>
+<!-- ============ JOIN ============ -->
+<section id="join">
+  <h2>Join</h2>
+  <p>Two numerical-modelling internships (M1/M2) are open for spring 2027, on <a href="research.html#bioconvection">bioconvection and oxygen depletion</a> and on <a href="research.html#ushs">trapped air on anti-drag surfaces</a>. Details and posters on the <a href="positions.html">Open positions</a> page.</p>
 </section>
 
 <!-- ============ CONTACT ============ -->
 <section id="contact">
-  <h2>Get in touch! <a class="totop" href="#top">top</a></h2>
+  <h2>Get in touch!</h2>
   <div class="contact">
     <address>
       <p><b>francesco.picella<span class="at"> [at] </span>sorbonne-universite.fr</b><br>+33 (0)1 44 27 54 68</p>
@@ -434,6 +152,7 @@
       <a href="https://scholar.google.com/citations?user=0s_pUN8AAAAJ">Google Scholar</a>
       <a href="https://hal.science/search/index/?q=%22Francesco+Picella%22&sort=producedDate_tdate+desc">HAL</a>
       <a href="https://orcid.org/0000-0003-0630-1528">ORCID</a>
+      <a href="https://basilisk.fr/sandbox/fpicella/README">Basilisk sandbox</a>
       <a href="https://github.com/fpicella">GitHub</a>
       <a href="https://www.researchgate.net/profile/Picella-Francesco">ResearchGate</a>
     </p>
@@ -446,20 +165,6 @@
   <a class="portrait small" href="#top" aria-label="Back to top"><img src="assets/img/portrait.jpg" alt="" width="56" height="56"></a>
   <p>© 2026 Francesco Picella · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
 </footer>
-
-<script>
-// YouTube cards: show a still image, load the player only when clicked.
-document.querySelectorAll('.yt[data-id]').forEach(function (box) {
-  box.addEventListener('click', function () {
-    var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + box.dataset.id + '?autoplay=1';
-    f.title = box.dataset.title || 'Video';
-    f.allow = 'autoplay; encrypted-media; picture-in-picture';
-    f.allowFullscreen = true;
-    box.replaceChildren(f);
-  }, { once: true });
-});
-</script>
 
 </body>
 </html>
