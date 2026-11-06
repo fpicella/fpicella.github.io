@@ -153,6 +153,7 @@ h3 a:hover { color: var(--accent); }
   background: color-mix(in srgb, var(--bg) 70%, transparent); color: var(--accent); font-size: 1.6rem; padding-left: .3rem; box-shadow: 0 0 0 2px var(--accent); }
 .yt[data-id]:hover .play { background: var(--accent); color: var(--bg); }
 .media.narrow { max-width: 20rem; }
+.media.wide { max-width: none; }
 .media.annot { max-width: 22rem; }
 .annot-box { position: relative; }
 .hand { position: absolute; left: 6%; top: 8%; font-family: "Caveat", "Comic Sans MS", cursive; font-size: 1.7rem; font-weight: 600; color: #f0f921; transform: rotate(-6deg); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
