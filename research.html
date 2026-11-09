@@ -1,233 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
 <title>Research — Francesco Picella</title>
-<meta name="description" content="Research of Francesco Picella (Institut ∂'Alembert, Sorbonne Université): bioconvection of micro-algae, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, and tools built in Basilisk.">
-<meta name="author" content="Francesco Picella">
-<meta name="color-scheme" content="dark">
-<meta name="theme-color" content="#0f1115">
-<link rel="canonical" href="https://francescopicella.com/research.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Research — Francesco Picella">
-<meta property="og:description" content="Bioconvection, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, Basilisk tools.">
-<meta property="og:url" content="https://francescopicella.com/research.html">
-<meta property="og:image" content="https://francescopicella.com/assets/img/bioconvection-poster.jpg">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Caveat:wght@600&display=swap">
-<link rel="stylesheet" href="assets/style.css">
+<meta content="Research of Francesco Picella (Institut ∂'Alembert, Sorbonne Université): bioconvection of micro-algae, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, and tools built in Basilisk." name="description"/>
+<meta content="Francesco Picella" name="author"/>
+<meta content="dark" name="color-scheme"/>
+<meta content="#0f1115" name="theme-color"/>
+<link href="https://francescopicella.com/research.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Research — Francesco Picella" property="og:title"/>
+<meta content="Bioconvection, artificial active matter, underwater superhydrophobic surfaces, stability of coupled flows, Basilisk tools." property="og:description"/>
+<meta content="https://francescopicella.com/research.html" property="og:url"/>
+<meta content="https://francescopicella.com/assets/img/bioconvection-poster.jpg" property="og:image"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;1,400&amp;family=Inter+Tight:wght@400;500;600&amp;family=Caveat:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="assets/style.css" rel="stylesheet"/>
 </head>
 <body>
-
-<header id="top" class="site-head wrap">
-  <a class="portrait" href="index.html" aria-label="Home"><img src="assets/img/portrait.jpg" alt="" width="64" height="64"></a>
-  <a class="name" href="index.html">Francesco Picella<small>Fluid mechanics · Institut ∂'Alembert, Sorbonne Université</small></a>
-</header>
-<nav class="topnav wrap" aria-label="Pages">
-  <a href="index.html">Home</a>
-  <a href="research.html" aria-current="page">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="news.html">News</a>
-  <a href="talks.html">Talks &amp; media</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="positions.html">Open positions</a>
-</nav>
+<header class="bar wrap" id="top"><a class="brand" href="index.html">Francesco Picella</a><nav aria-label="Pages"><a href="index.html">Home</a><a aria-current="page" href="research.html">Research</a><a href="publications.html">Publications</a><a href="news.html">News</a><a href="talks.html">Talks &amp; media</a><a href="teaching.html">Teaching</a><a href="positions.html">Open positions</a></nav></header>
 
 <main class="wrap">
-
 <h1 class="page-title">Research</h1>
-<p class="lede">My work sits between theory, modelling and computation. Take a flow that is coupled to something else — a population of swimming cells, a self-propelled colloid, a layer of air trapped on a wall, an electric field, a deformable boundary — write the smallest model that keeps the coupling, and ask the questions of <b>hydrodynamic stability</b>: what is the base state, when does it lose stability, which pattern is selected, what happens next. Linear and global stability, adjoint and nonlinear optimisation, direct numerical simulation are the tools; the experiments of colleagues are the check.</p>
-<p class="muted">Jump to: <a href="#bioconvection">Bioconvection</a> · <a href="#active">Phoretic active matter</a> · <a href="#ushs">Underwater superhydrophobic surfaces</a> · <a href="#transition">Laminar–turbulent transition</a> · <a href="#ehd">Plasma thrusters</a> · <a href="#stability">Stability of coupled flows</a> · <a href="#basilisk">Tools in Basilisk</a></p>
+<p class="lede">Flows coupled to something else — living cells, active colloids, trapped air, an electric field, a moving wall. I write the smallest model that keeps the coupling, and ask the questions of hydrodynamic stability.</p><div class="tiles small"><figure class="tile"><img alt="" loading="lazy" src="assets/img/bioconvection-teaser.jpg"/><figcaption><b>Bioconvection</b><a class="cover" href="#bioconvection"><span style="font-size:0">Bioconvection</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/swimmer-cross-poster.jpg"/><figcaption><b>Phoretic active matter</b><a class="cover" href="#active"><span style="font-size:0">Phoretic active matter</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/taras-1-poster.jpg"/><figcaption><b>Superhydrophobic surfaces</b><a class="cover" href="#ushs"><span style="font-size:0">Superhydrophobic surfaces</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/transition-ktype-poster.jpg"/><figcaption><b>Laminar–turbulent transition</b><a class="cover" href="#transition"><span style="font-size:0">Laminar–turbulent transition</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/ehd-modes.png"/><figcaption><b>Plasma thrusters</b><a class="cover" href="#ehd"><span style="font-size:0">Plasma thrusters</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/research-cavity-poster.jpg"/><figcaption><b>Stability of coupled flows</b><a class="cover" href="#stability"><span style="font-size:0">Stability of coupled flows</span></a></figcaption></figure><figure class="tile"><img alt="" loading="lazy" src="assets/img/basilisk-fingering-poster.jpg"/><figcaption><b>Tools, in Basilisk</b><a class="cover" href="#basilisk"><span style="font-size:0">Tools, in Basilisk</span></a></figcaption></figure></div>
 
 <!-- ============ BIOCONVECTION ============ -->
 <section id="projects">
-
-  <article class="project" id="bioconvection">
-    <div class="project-text">
-      <h3>Bioconvection — micro-algae suspensions over a structured floor</h3>
-      <p class="tag">bio-active fluids · with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a> (∂'Alembert)</p>
-      <p><i>Chlamydomonas</i> are swimming micro-algae, slightly denser than water, that swim upwards. Gathered under the surface, the suspension becomes top-heavy and overturns into <b>plumes and rolls</b>: bioconvection, first drawn by Wager in 1911. In the experiments at ∂'Alembert, Hélène changes the environment — the light, the depth, the bathymetry of the cell — and the plumes answer: over a zigzag floor they are born in the troughs and end up on the crests.</p>
-      <p>On my side I write <b>continuum models</b> of the suspension (cell density, orientation, flow) and simulate them in 2D and 3D. Without noise the model lingers for a very long time before organising; with noise it falls at once into the state seen in the experiments — which points to an <b>instability</b>, analysed with the tools of <a href="#stability">hydrodynamic stability</a>: the base state with the cells piled under the surface, its eigenmodes and growth rates on flat, sloped and zigzag floors. An agent-resolved model (a few thousand swimmers coupled through the fluid) checks the continuum one. Next: coupling the cells' own <b>oxygen consumption</b> to the flow — what happens when the algae make their water anoxic.</p>
-      <p class="collab"><b>With</b> Hélène de Maleprade (experiments, ∂'Alembert), M. Givaudan (∂'Alembert; <a href="publications.html#crphys2026">C. R. Physique 2026</a>), A. Huyghues-Despointes (Petri-dish experiments), <a href="https://pgledda.github.io/">Pier Giuseppe Ledda</a> (University of Cagliari; complex interfaces, BRIDGE visit 2026). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig"><img src="assets/img/chlamy-composite.jpg" alt="A single Chlamydomonas cell beating its two flagella; to its right a swarm of cells crowds under the surface and sinks as a plume" loading="lazy"><figcaption>One cell (≈ 10 µm, swims up at ≈ 100 µm/s) — and the plume a crowd of them builds, a hundred times bigger.</figcaption></figure>
-    </div>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/bioconvection-poster.jpg"><source src="assets/media/bioconvection.mp4" type="video/mp4"></video>
-      <figcaption><b>The experiment, then the cartoon.</b> A Petri dish seen from above and a thin cell seen from the side: the plumes form in minutes (experiments H. de Maleprade and A. Huyghues-Despointes). Then the engine, drawn: one cell swims up; many gather under the free surface; the heavy layer falls in a plume. From my JMC 2026 talk.</figcaption>
-    </figure>
-    <figure class="fig wide">
-      <img src="assets/img/chlamy-exp-vs-model.jpg" alt="Experiment versus model on a zig-zag floor: side views and space–time diagrams over 60 minutes for the experiment, the 3D simulation and the 2D simulation; plumes line up with the crests" loading="lazy">
-      <figcaption>Experiment vs model on the zigzag floor (JMC 2026): side view at 60 min and space–time diagram of the plumes for the experiment (left), the 3D simulation (centre) and the 2D simulation (right). Orange lines mark the crests, dotted blue the troughs — the plumes end up on the crests in all three.</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="bioconvection"><h3>Bioconvection — micro-algae suspensions over a structured floor</h3><p class="tag">bio-active fluids · with <a href="https://hdemaleprade.wixsite.com/mysite">Hélène de Maleprade</a> (∂'Alembert)</p><figure class="hero-media">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/bioconvection-poster.jpg" preload="metadata"><source src="assets/media/bioconvection.mp4" type="video/mp4"/></video>
+<figcaption><b>The experiment, then the cartoon.</b> A Petri dish seen from above and a thin cell seen from the side: the plumes form in minutes (experiments H. de Maleprade and A. Huyghues-Despointes). Then the engine, drawn: one cell swims up; many gather under the free surface; the heavy layer falls in a plume. From my JMC 2026 talk.</figcaption>
+</figure><p class="oneliner">Swimming micro-algae gather under the surface and fall back as plumes: a living fluid that picks its own pattern — and a shaped floor that can pick it for them.</p><p class="collab"><b>With</b> Hélène de Maleprade (experiments, ∂'Alembert), M. Givaudan (∂'Alembert; <a href="publications.html#crphys2026">C. R. Physique 2026</a>), A. Huyghues-Despointes (Petri-dish experiments), <a href="https://pgledda.github.io/">Pier Giuseppe Ledda</a> (University of Cagliari; complex interfaces, BRIDGE visit 2026). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p><details><summary>Read more</summary><p><i>Chlamydomonas</i> are swimming micro-algae, slightly denser than water, that swim upwards. Gathered under the surface, the suspension becomes top-heavy and overturns into <b>plumes and rolls</b>: bioconvection, first drawn by Wager in 1911. In the experiments at ∂'Alembert, Hélène changes the environment — the light, the depth, the bathymetry of the cell — and the plumes answer: over a zigzag floor they are born in the troughs and end up on the crests.</p><p>On my side I write <b>continuum models</b> of the suspension (cell density, orientation, flow) and simulate them in 2D and 3D. Without noise the model lingers for a very long time before organising; with noise it falls at once into the state seen in the experiments — which points to an <b>instability</b>, analysed with the tools of <a href="#stability">hydrodynamic stability</a>: the base state with the cells piled under the surface, its eigenmodes and growth rates on flat, sloped and zigzag floors. An agent-resolved model (a few thousand swimmers coupled through the fluid) checks the continuum one. Next: coupling the cells' own <b>oxygen consumption</b> to the flow — what happens when the algae make their water anoxic.</p><div class="figs"><figure class="fig">
+<img alt="Experiment versus model on a zig-zag floor: side views and space–time diagrams over 60 minutes for the experiment, the 3D simulation and the 2D simulation; plumes line up with the crests" loading="lazy" src="assets/img/chlamy-exp-vs-model.jpg"/>
+<figcaption>Experiment vs model on the zigzag floor (JMC 2026): side view at 60 min and space–time diagram of the plumes for the experiment (left), the 3D simulation (centre) and the 2D simulation (right). Orange lines mark the crests, dotted blue the troughs — the plumes end up on the crests in all three.</figcaption>
+</figure><figure class="fig"><img alt="A single Chlamydomonas cell beating its two flagella; to its right a swarm of cells crowds under the surface and sinks as a plume" loading="lazy" src="assets/img/chlamy-composite.jpg"/><figcaption>One cell (≈ 10 µm, swims up at ≈ 100 µm/s) — and the plume a crowd of them builds, a hundred times bigger.</figcaption></figure></div></details></article>
 <!-- ============ PHORETIC ACTIVE MATTER ============ -->
-  <article class="project" id="active">
-        <div class="project-text">
-      <h3>Phoretic active matter — self-propelled colloids and the walls around them</h3>
-      <p class="tag">synthetic microswimmers · with <a href="https://www.ladhyx.polytechnique.fr/">Sébastien Michelin</a> (LadHyX, École Polytechnique)</p>
-      <p>A phoretic colloid turns a chemical gradient at its own surface into motion: it emits or consumes a solute, the solute drives a <b>slip velocity</b> along the surface, the slip propels the particle. A Janus particle carries its asymmetry built in. An <b>isotropic</b> one cannot swim in an unbounded fluid — nothing picks a direction — but it can be <b>unstable</b>: above a critical Péclet number the solute it emits is swept back and the symmetric state gives way to a swimming one. My postdoc at LadHyX put such a particle in a tube. <b>Confinement screens the hydrodynamics</b>, lowers the threshold and selects the direction: the particle swims along the axis, at a speed set by the solute difference between its front and its back (<a href="publications.html#jfm2022">JFM 2022</a>).</p>
-      <p>I compute the base states, their stability and the swimming branches with a Stokes + advection–diffusion solver on adaptive grids with embedded boundaries (<a href="#basilisk">Basilisk</a>) and with axisymmetric spectral methods; the current question, with S. Michelin, is which <b>secondary bifurcations</b> follow — steady, oscillatory, non-axisymmetric "spiralling" motions. At a junction the same particle picks a branch: the solute it leaves behind is a chemical compass. From one swimmer to many: with a minimal <b>three-force model</b> (<i>tHree</i>) I look at how hydrodynamic interactions between swimmers are screened by walls and at the collective states they produce — phototactic drift, fingering, and the artificial counterpart of the <a href="#bioconvection">bioconvection</a> plumes.</p>
-      <p class="collab"><b>With</b> Sébastien Michelin (LadHyX, École Polytechnique), Ambre Palotai (M2 internship 2024–25, hydrodynamic interactions between swimmers).</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-swimmer.png" aria-label="Animation: an isotropic active colloid swimming in a tube"><source src="assets/media/swimmer-pe30.mp4" type="video/mp4"></video>
-        <figcaption>An isotropic active colloid in a tube at Pe = 30: the solute it emits (colour) is swept back, and the particle swims.</figcaption>
-      </figure>
-      <figure class="fig">
-        <img src="assets/img/phoretic-uz-pe.png" alt="Swimming speed versus Péclet number for several confinement ratios, linear and logarithmic scales" loading="lazy">
-        <figcaption>Swimming speed <i>U<sub>z</sub></i> against Pe for confinement ratios κ = 0.2 … 0.8: the tighter the tube, the lower the threshold.</figcaption>
-      </figure>
-    </div>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/swimmer-cross-poster.jpg"><source src="assets/media/swimmer-cross.mp4" type="video/mp4"></video>
-      <figcaption><b>A chemical compass.</b> The same particle at a cross junction, at Pe = 15 and Pe = 30 (red and blue trajectories): the solute it leaves behind decides which branch it takes.</figcaption>
-    </figure>
-    <figure class="fig wide">
-      <img src="assets/img/phoretic-physics-numerics.png" alt="Physics and numerics of a confined phoretic swimmer: chemical transport and hydrodynamics on the left, embedded boundaries and adaptive grids on the right" loading="lazy">
-      <figcaption>Physics and numerics of a confined phoretic swimmer: surface activity and advection–diffusion of the solute, unsteady Stokes flow with a phoretic slip — solved on adaptive grids with embedded boundaries.</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="active"><h3>Phoretic active matter — self-propelled colloids and the walls around them</h3><p class="tag">synthetic microswimmers · with <a href="https://www.ladhyx.polytechnique.fr/">Sébastien Michelin</a> (LadHyX, École Polytechnique)</p><figure class="hero-media">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/swimmer-cross-poster.jpg" preload="metadata"><source src="assets/media/swimmer-cross.mp4" type="video/mp4"/></video>
+<figcaption><b>A chemical compass.</b> The same particle at a cross junction, at Pe = 15 and Pe = 30 (red and blue trajectories): the solute it leaves behind decides which branch it takes.</figcaption>
+</figure><p class="oneliner">A particle that cannot swim on its own starts to, once a wall breaks the symmetry: the bifurcations of synthetic swimmers, one and many.</p><p class="collab"><b>With</b> Sébastien Michelin (LadHyX, École Polytechnique), Ambre Palotai (M2 internship 2024–25, hydrodynamic interactions between swimmers).</p><details><summary>Read more</summary><p>A phoretic colloid turns a chemical gradient at its own surface into motion: it emits or consumes a solute, the solute drives a <b>slip velocity</b> along the surface, the slip propels the particle. A Janus particle carries its asymmetry built in. An <b>isotropic</b> one cannot swim in an unbounded fluid — nothing picks a direction — but it can be <b>unstable</b>: above a critical Péclet number the solute it emits is swept back and the symmetric state gives way to a swimming one. My postdoc at LadHyX put such a particle in a tube. <b>Confinement screens the hydrodynamics</b>, lowers the threshold and selects the direction: the particle swims along the axis, at a speed set by the solute difference between its front and its back (<a href="publications.html#jfm2022">JFM 2022</a>).</p><p>I compute the base states, their stability and the swimming branches with a Stokes + advection–diffusion solver on adaptive grids with embedded boundaries (<a href="#basilisk">Basilisk</a>) and with axisymmetric spectral methods; the current question, with S. Michelin, is which <b>secondary bifurcations</b> follow — steady, oscillatory, non-axisymmetric "spiralling" motions. At a junction the same particle picks a branch: the solute it leaves behind is a chemical compass. From one swimmer to many: with a minimal <b>three-force model</b> (<i>tHree</i>) I look at how hydrodynamic interactions between swimmers are screened by walls and at the collective states they produce — phototactic drift, fingering, and the artificial counterpart of the <a href="#bioconvection">bioconvection</a> plumes.</p><div class="figs"><figure class="fig">
+<img alt="Physics and numerics of a confined phoretic swimmer: chemical transport and hydrodynamics on the left, embedded boundaries and adaptive grids on the right" loading="lazy" src="assets/img/phoretic-physics-numerics.png"/>
+<figcaption>Physics and numerics of a confined phoretic swimmer: surface activity and advection–diffusion of the solute, unsteady Stokes flow with a phoretic slip — solved on adaptive grids with embedded boundaries.</figcaption>
+</figure><figure class="fig">
+<video aria-label="Animation: an isotropic active colloid swimming in a tube" autoplay="" loop="" muted="" playsinline="" poster="assets/img/research-swimmer.png" preload="metadata"><source src="assets/media/swimmer-pe30.mp4" type="video/mp4"/></video>
+<figcaption>An isotropic active colloid in a tube at Pe = 30: the solute it emits (colour) is swept back, and the particle swims.</figcaption>
+</figure><figure class="fig">
+<img alt="Swimming speed versus Péclet number for several confinement ratios, linear and logarithmic scales" loading="lazy" src="assets/img/phoretic-uz-pe.png"/>
+<figcaption>Swimming speed <i>U<sub>z</sub></i> against Pe for confinement ratios κ = 0.2 … 0.8: the tighter the tube, the lower the threshold.</figcaption>
+</figure></div></details></article>
 <!-- ============ U-SHS / TARAS ============ -->
-  <article class="project" id="ushs">
-    <div class="project-text">
-      <h3>Underwater superhydrophobic surfaces (U-SHS) — trapped air and drag reduction</h3>
-      <p class="tag">TARAS · ANR JCJC proposal (AAPG 2027) · the <i>Salvinia</i> effect</p>
-      <p>The water fern <i>Salvinia</i> keeps a layer of air on its hairs when submerged. A textured, water-repellent wall does the same: it traps a thin layer of air, the <b>plastron</b>, between the solid and the water. The flow slips over the gas pockets, friction drops, and the idea of an air-lubricated ship hull is not far away. During my PhD I showed how much the way the surface is modelled — a homogeneous slip wall, or a textured, heterogeneous one — changes the <b>laminar–turbulent transition</b> of a channel (<a href="publications.html#jfm2019">JFM 2019</a>, <a href="publications.html#jfm2020">2020</a>, <a href="publications.html#math2021">Mathematics 2021</a>).</p>
-      <p>Most models freeze the air–water interface in place. In reality the trapped air <b>responds to the flow</b> — it deforms, it can be dragged out of its cavities — and the flow responds back. TARAS builds a <b>two-way wall model</b> for this coupling, from the microscopic gas pocket (deflection <i>η</i>, surface tension <i>σ</i>) to the transition of the whole channel, to predict when drag reduction survives and when it is lost.</p>
-      <p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Malo Walmetz (M2 internship 2026, Basilisk). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig logo-fig"><img src="assets/img/taras-logo.png" alt="TARAS project logo: Taras surfing a wave on a Salvinia leaf whose hairs hold a layer of air" loading="lazy"><figcaption>Taras rides the wave on a <i>Salvinia</i> leaf.</figcaption></figure>
-    </div>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/taras-1-poster.jpg"><source src="assets/media/taras-1.mp4" type="video/mp4"></video>
-      <figcaption><b>The idea, in 24 seconds.</b> First the real thing — a water drop rolling off a lotus leaf, filmed in 2019 — then the sketch: the fern <i>Salvinia</i> keeps a layer of air under water with its egg-beater hairs; copy the trick on a hull and the water slips.</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="ushs"><h3>Underwater superhydrophobic surfaces (U-SHS) — trapped air and drag reduction</h3><p class="tag">TARAS · ANR JCJC proposal (AAPG 2027) · the <i>Salvinia</i> effect</p><figure class="hero-media">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/taras-1-poster.jpg" preload="metadata"><source src="assets/media/taras-1.mp4" type="video/mp4"/></video>
+<figcaption><b>The idea, in 24 seconds.</b> First the real thing — a water drop rolling off a lotus leaf, filmed in 2019 — then the sketch: the fern <i>Salvinia</i> keeps a layer of air under water with its egg-beater hairs; copy the trick on a hull and the water slips.</figcaption>
+</figure><p class="oneliner">Air trapped on a textured wall lets water slip. The question is when the air survives the flow.</p><p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Malo Walmetz (M2 internship 2026, Basilisk). Internship open for 2027 — see <a href="positions.html">Open positions</a>.</p><details><summary>Read more</summary><p>The water fern <i>Salvinia</i> keeps a layer of air on its hairs when submerged. A textured, water-repellent wall does the same: it traps a thin layer of air, the <b>plastron</b>, between the solid and the water. The flow slips over the gas pockets, friction drops, and the idea of an air-lubricated ship hull is not far away. During my PhD I showed how much the way the surface is modelled — a homogeneous slip wall, or a textured, heterogeneous one — changes the <b>laminar–turbulent transition</b> of a channel (<a href="publications.html#jfm2019">JFM 2019</a>, <a href="publications.html#jfm2020">2020</a>, <a href="publications.html#math2021">Mathematics 2021</a>).</p><p>Most models freeze the air–water interface in place. In reality the trapped air <b>responds to the flow</b> — it deforms, it can be dragged out of its cavities — and the flow responds back. TARAS builds a <b>two-way wall model</b> for this coupling, from the microscopic gas pocket (deflection <i>η</i>, surface tension <i>σ</i>) to the transition of the whole channel, to predict when drag reduction survives and when it is lost.</p><div class="figs"><figure class="fig logo-fig"><img alt="TARAS project logo: Taras surfing a wave on a Salvinia leaf whose hairs hold a layer of air" loading="lazy" src="assets/img/taras-logo.png"/><figcaption>Taras rides the wave on a <i>Salvinia</i> leaf.</figcaption></figure></div></details></article>
 <!-- ============ LAMINAR-TURBULENT TRANSITION ============ -->
-  <article class="project" id="transition">
-    <div class="project-text">
-      <h3>Laminar–turbulent transition — over complex surfaces</h3>
-      <p class="tag">my PhD subject · DynFluid, Arts et Métiers · direct numerical simulation (Nek5000)</p>
-      <p>A laminar channel flow is linearly stable far beyond the Reynolds number at which it turns turbulent in practice: transition is a question of <b>disturbances</b> — which ones the flow is receptive to, how they grow, exponentially or transiently through the lift-up of streaks, and how they break down. The two classic paths are sketched on the right: at low free-stream turbulence, Tollmien–Schlichting waves, Λ-vortices, hairpins and turbulent spots (the <b>K-type</b> scenario); at high free-stream turbulence, streaks that grow transiently and break down (the <b>bypass</b> route).</p>
-      <p>My PhD asked what a <b>superhydrophobic wall</b> does to each path. Modelled as a homogeneous slip length, slip delays the K-type transition — by how much depends on the route (<a href="publications.html#jfm2019">JFM 2019</a>). Modelled as the real texture, alternating slip and no-slip stripes, the picture changes; letting the air–water interfaces <b>move with the flow</b> changes it again (<a href="publications.html#jfm2020">JFM 2020</a>). A synthetic forcing that mimics free-stream turbulence lets the same code trigger the bypass route in a controlled way (<a href="publications.html#jcp2019">JCP 2019</a>), and nonlinear optimal perturbations give the smallest seed that trips the flow (<a href="publications.html#math2021">Mathematics 2021</a>). Simulations on up to 7·10<sup>7</sup> grid points, 3·10<sup>6</sup> CPU hours (GENCI).</p>
-      <p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Michele Alessandro Bucci (synthetic forcing). The textured-wall models are the starting point of <a href="#ushs">TARAS</a>.</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig">
-        <img src="assets/img/transition-paths.png" alt="Two sketches of boundary-layer transition: at low free-stream turbulence through Tollmien–Schlichting waves, lambda vortices and hairpins; at high free-stream turbulence through streaks and their breakdown" loading="lazy">
-        <figcaption>Two roads to turbulence: Tu &lt; 1 % (top) and Tu &gt; 1 % (bottom).</figcaption>
-      </figure>
-      <figure class="fig">
-        <img src="assets/img/transition-wall-models.png" alt="Four wall models for a superhydrophobic surface: no-slip, homogeneous slip length, heterogeneous slip–no-slip stripes, and stripes with moving gas–liquid interfaces" loading="lazy">
-        <figcaption>Four ways to model the wall: no-slip (PPF), homogeneous slip length (HSL), slip–no-slip stripes (SNS), stripes with moving interfaces (MVB).</figcaption>
-      </figure>
-    </div>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/transition-ktype-poster.jpg"><source src="assets/media/transition-ktype.mp4" type="video/mp4"></video>
-      <figcaption><b>Same disturbance, four walls.</b> K-type transition in a channel for the four wall models side by side — no-slip, homogeneous slip, slip–no-slip stripes, stripes with moving interfaces — with the friction Reynolds number <i>Re<sub>τ</sub></i>(<i>t</i>) that jumps when the flow turns turbulent (JFM 2020).</figcaption>
-    </figure>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/transition-temporal-poster.jpg"><source src="assets/media/transition-temporal.mp4" type="video/mp4"></video>
-      <figcaption><b>Transition over a textured wall, in time.</b> From <i>t</i> = 28 to 200: the wall velocity (colour) and the vortical structures (red) as streaks form and break down, and <i>Re<sub>τ</sub></i> climbs to its turbulent value.</figcaption>
-    </figure>
-    <figure class="fig wide film">
-      <video controls muted loop playsinline preload="metadata" poster="assets/img/transition-fst-poster.jpg"><source src="assets/media/transition-fst.mp4" type="video/mp4"></video>
-      <figcaption><b>The bypass route, on demand.</b> A synthetic forcing <b>f</b>(<b>x</b>, <i>t</i>) mimics free-stream turbulence (Tu = 0.05 %): streaks, then hairpins, then transition (JCP 2019).</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="transition"><h3>Laminar–turbulent transition — over complex surfaces</h3><p class="tag">my PhD subject · DynFluid, Arts et Métiers · direct numerical simulation (Nek5000)</p><figure class="hero-media">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/transition-ktype-poster.jpg" preload="metadata"><source src="assets/media/transition-ktype.mp4" type="video/mp4"/></video>
+<figcaption><b>Same disturbance, four walls.</b> K-type transition in a channel for the four wall models side by side — no-slip, homogeneous slip, slip–no-slip stripes, stripes with moving interfaces — with the friction Reynolds number <i>Re<sub>τ</sub></i>(<i>t</i>) that jumps when the flow turns turbulent (JFM 2020).</figcaption>
+</figure><p class="oneliner">Same disturbance, four walls: how a superhydrophobic surface changes the way a channel flow becomes turbulent.</p><p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Michele Alessandro Bucci (synthetic forcing). The textured-wall models are the starting point of <a href="#ushs">TARAS</a>.</p><details><summary>Read more</summary><p>A laminar channel flow is linearly stable far beyond the Reynolds number at which it turns turbulent in practice: transition is a question of <b>disturbances</b> — which ones the flow is receptive to, how they grow, exponentially or transiently through the lift-up of streaks, and how they break down. The two classic paths are sketched on the right: at low free-stream turbulence, Tollmien–Schlichting waves, Λ-vortices, hairpins and turbulent spots (the <b>K-type</b> scenario); at high free-stream turbulence, streaks that grow transiently and break down (the <b>bypass</b> route).</p><p>My PhD asked what a <b>superhydrophobic wall</b> does to each path. Modelled as a homogeneous slip length, slip delays the K-type transition — by how much depends on the route (<a href="publications.html#jfm2019">JFM 2019</a>). Modelled as the real texture, alternating slip and no-slip stripes, the picture changes; letting the air–water interfaces <b>move with the flow</b> changes it again (<a href="publications.html#jfm2020">JFM 2020</a>). A synthetic forcing that mimics free-stream turbulence lets the same code trigger the bypass route in a controlled way (<a href="publications.html#jcp2019">JCP 2019</a>), and nonlinear optimal perturbations give the smallest seed that trips the flow (<a href="publications.html#math2021">Mathematics 2021</a>). Simulations on up to 7·10<sup>7</sup> grid points, 3·10<sup>6</sup> CPU hours (GENCI).</p><div class="figs"><figure class="fig">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/transition-temporal-poster.jpg" preload="metadata"><source src="assets/media/transition-temporal.mp4" type="video/mp4"/></video>
+<figcaption><b>Transition over a textured wall, in time.</b> From <i>t</i> = 28 to 200: the wall velocity (colour) and the vortical structures (red) as streaks form and break down, and <i>Re<sub>τ</sub></i> climbs to its turbulent value.</figcaption>
+</figure><figure class="fig">
+<video controls="" loop="" muted="" playsinline="" poster="assets/img/transition-fst-poster.jpg" preload="metadata"><source src="assets/media/transition-fst.mp4" type="video/mp4"/></video>
+<figcaption><b>The bypass route, on demand.</b> A synthetic forcing <b>f</b>(<b>x</b>, <i>t</i>) mimics free-stream turbulence (Tu = 0.05 %): streaks, then hairpins, then transition (JCP 2019).</figcaption>
+</figure><figure class="fig">
+<img alt="Two sketches of boundary-layer transition: at low free-stream turbulence through Tollmien–Schlichting waves, lambda vortices and hairpins; at high free-stream turbulence through streaks and their breakdown" loading="lazy" src="assets/img/transition-paths.png"/>
+<figcaption>Two roads to turbulence: Tu &lt; 1 % (top) and Tu &gt; 1 % (bottom).</figcaption>
+</figure><figure class="fig">
+<img alt="Four wall models for a superhydrophobic surface: no-slip, homogeneous slip length, heterogeneous slip–no-slip stripes, and stripes with moving gas–liquid interfaces" loading="lazy" src="assets/img/transition-wall-models.png"/>
+<figcaption>Four ways to model the wall: no-slip (PPF), homogeneous slip length (HSL), slip–no-slip stripes (SNS), stripes with moving interfaces (MVB).</figcaption>
+</figure></div></details></article>
 <!-- ============ PLASMA THRUSTERS / EHD ============ -->
-  <article class="project" id="ehd">
-    <div class="project-text">
-      <h3>Plasma thrusters — the ionic wind of corona discharges</h3>
-      <p class="tag">postdoc at IMFT, Toulouse · electro-hydrodynamics · FreeFem++ / StabFem</p>
-      <p>Apply a high voltage — 10 to 20 kV — between a thin wire and a collector in air. Near the wire the field ionises the air (a <b>corona discharge</b>); the ions drift towards the collector, collide with neutral molecules and drag the air along: an <b>ionic wind</b>, a thrust without any moving part. Silent, solid-state propulsion for small aircraft is the application. The physics is a coupled problem — electrostatics (Poisson), charge transport (drift, diffusion, convection) and Navier–Stokes, each feeding the other through the Coulomb force and the convection of charge.</p>
-      <p>At IMFT I built the fully coupled solver in FreeFem++, on adaptive meshes that resolve the 100-µm emitter inside a centimetre-scale domain, and used it for three things: the <b>thrust–voltage law</b>, checked against experiments and against electrostatic-only models; the structure of the ionic-wind jet and its wake behind the emitter; and the <b>global stability</b> of the electro-hydrodynamic base flow — its eigenmodes, and the onset of unsteadiness (<a href="publications.html#aiaa2024">AIAA J. 2024</a>).</p>
-      <p class="collab"><b>With</b> David Fabre, Franck Plouraboué and Christophe Airiau (IMFT, Toulouse).</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig">
-        <img src="assets/img/ehd-ionic-wind.png" alt="Ionic wind around the emitter: velocity in colour, vectors and streamlines" loading="lazy">
-        <figcaption>The ionic wind around the emitter wire: velocity (colour), vectors and streamlines, Re = 2150.</figcaption>
-      </figure>
-      <figure class="fig">
-        <img src="assets/img/ehd-thrust-validation.png" alt="Thrust per unit length versus voltage: experiment of Kiousis et al. 2014, electrostatic model of Coseru et al. 2021, and the present coupled model" loading="lazy">
-        <figcaption>Thrust against voltage: experiment (Kiousis <i>et al.</i> 2014), electrostatic model (Coseru <i>et al.</i> 2021), and the fully coupled electro-hydrodynamic model.</figcaption>
-      </figure>
-    </div>
-    <figure class="fig wide">
-      <img src="assets/img/ehd-modes.png" alt="Two global eigenmodes of the electro-hydrodynamic base flow, streamwise velocity" loading="lazy">
-      <figcaption>Two global modes of the electro-hydrodynamic base flow (streamwise velocity, FreeFem++/StabFem): where the ionic-wind jet first goes unsteady.</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="ehd"><h3>Plasma thrusters — the ionic wind of corona discharges</h3><p class="tag">postdoc at IMFT, Toulouse · electro-hydrodynamics · FreeFem++ / StabFem</p><figure class="hero-media">
+<img alt="Two global eigenmodes of the electro-hydrodynamic base flow, streamwise velocity" loading="lazy" src="assets/img/ehd-modes.png"/>
+<figcaption>Two global modes of the electro-hydrodynamic base flow (streamwise velocity, FreeFem++/StabFem): where the ionic-wind jet first goes unsteady.</figcaption>
+</figure><p class="oneliner">Thrust with no moving parts: the ionic wind of a corona discharge, simulated fully coupled, and its stability.</p><p class="collab"><b>With</b> David Fabre, Franck Plouraboué and Christophe Airiau (IMFT, Toulouse).</p><details><summary>Read more</summary><p>Apply a high voltage — 10 to 20 kV — between a thin wire and a collector in air. Near the wire the field ionises the air (a <b>corona discharge</b>); the ions drift towards the collector, collide with neutral molecules and drag the air along: an <b>ionic wind</b>, a thrust without any moving part. Silent, solid-state propulsion for small aircraft is the application. The physics is a coupled problem — electrostatics (Poisson), charge transport (drift, diffusion, convection) and Navier–Stokes, each feeding the other through the Coulomb force and the convection of charge.</p><p>At IMFT I built the fully coupled solver in FreeFem++, on adaptive meshes that resolve the 100-µm emitter inside a centimetre-scale domain, and used it for three things: the <b>thrust–voltage law</b>, checked against experiments and against electrostatic-only models; the structure of the ionic-wind jet and its wake behind the emitter; and the <b>global stability</b> of the electro-hydrodynamic base flow — its eigenmodes, and the onset of unsteadiness (<a href="publications.html#aiaa2024">AIAA J. 2024</a>).</p><div class="figs"><figure class="fig">
+<img alt="Ionic wind around the emitter: velocity in colour, vectors and streamlines" loading="lazy" src="assets/img/ehd-ionic-wind.png"/>
+<figcaption>The ionic wind around the emitter wire: velocity (colour), vectors and streamlines, Re = 2150.</figcaption>
+</figure><figure class="fig">
+<img alt="Thrust per unit length versus voltage: experiment of Kiousis et al. 2014, electrostatic model of Coseru et al. 2021, and the present coupled model" loading="lazy" src="assets/img/ehd-thrust-validation.png"/>
+<figcaption>Thrust against voltage: experiment (Kiousis <i>et al.</i> 2014), electrostatic model (Coseru <i>et al.</i> 2021), and the fully coupled electro-hydrodynamic model.</figcaption>
+</figure></div></details></article>
 <!-- ============ STABILITY OF COUPLED FLOWS ============ -->
-  <article class="project" id="stability">
-    <div class="project-text">
-      <h3>Stability of coupled flows — linear stability, bifurcations, transition</h3>
-      <p class="tag">the common toolbox · global stability · nonlinear optimal perturbations</p>
-      <p>Everything on this page is a stability problem in disguise. Start from a steady <b>base state</b> — a laminar channel, a cavity flow, a suspension at rest with its cells piled under the surface, a gas pocket at equilibrium — and add a small perturbation. The <b>linearised equations</b> say whether it grows: an eigenvalue with positive real part, the wavelength and frequency of the growing mode, and its shape. In a <b>global</b> analysis the base flow is fully two- or three-dimensional and the eigenproblem is solved numerically, by Arnoldi iterations on a time-stepper (Nek5000) or with finite elements (FreeFem++/StabFem). <b>Adjoint</b> modes give receptivity and sensitivity — where a small change in the problem changes the answer most. When the linear picture is not enough, <b>nonlinear optimal perturbations</b> (a variational, adjoint-based optimisation) find the smallest disturbance that trips the flow, and continuation follows the branches through the <b>sequence of bifurcations</b>, up to transition.</p>
-      <p>Where the coupling enters, so far: a slip or textured wall (<a href="#transition">transition</a> in channels with superhydrophobic walls); a fully three-dimensional open cavity and its successive bifurcations, compared with experiments (<a href="publications.html#jfm2018">JFM 2018</a>); the receptivity of a boundary layer to free-stream disturbances, mimicked by a synthetic forcing (<a href="publications.html#jcp2019">JCP 2019</a>); an electric field — the ionic wind of a corona discharge, a coupled electro-hydrodynamic problem (<a href="#ehd">plasma thrusters</a>); a chemical field around a <a href="#active">phoretic particle</a>; a moving or deformable boundary (ALE and embedded-boundary formulations, fluid–structure interaction); and a swimming population, in <a href="#bioconvection">bioconvection</a>.</p>
-      <p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Jean-Christophe Loiseau, François Lusseyran and Luc Pastur (open cavity), Michele Alessandro Bucci, David Fabre, Franck Plouraboué and Christophe Airiau (IMFT, Toulouse), Pier Giuseppe Ledda (Cagliari).</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/research-cavity-poster.jpg" aria-label="Animation: helical vortices in a three-dimensional open cavity flow"><source src="assets/media/cavity-helicity.mp4" type="video/mp4"></video>
-        <figcaption>Helical structures in the fully three-dimensional open cavity flow, after its successive bifurcations (JFM 2018).</figcaption>
-      </figure>
-      <figure class="fig">
-        <img src="assets/img/cavity-bifurcations.png" alt="Sketch of the successive bifurcations of the open cavity flow as the Reynolds number increases" loading="lazy">
-        <figcaption>The sequence of bifurcations of the open cavity flow as <i>Re</i> increases, sketched: no Taylor–Görtler vortices, then steady ones (<i>Re<sub>C1</sub></i>), then unsteady ones (<i>Re<sub>C2</sub></i>).</figcaption>
-      </figure>
-    </div>
-    <figure class="fig wide">
-      <img src="assets/img/coupled-dynamics.png" alt="Sketch: the Navier–Stokes fluid coupled one-way or two-way to complex boundaries, free surfaces, electromagnetism and chemistry; future: turbulence, fluid–structure interaction, acoustics, combustion" loading="lazy">
-      <figcaption>Different subjects, a similar approach: the fluid, coupled one-way or two-way to a boundary, a free surface, an electric field, a chemical field — and the couplings still to come.</figcaption>
-    </figure>
-  </article>
-
+<article class="project" id="stability"><h3>Stability of coupled flows — linear stability, bifurcations, transition</h3><p class="tag">the common toolbox · global stability · nonlinear optimal perturbations</p><figure class="hero-media">
+<video aria-label="Animation: helical vortices in a three-dimensional open cavity flow" autoplay="" loop="" muted="" playsinline="" poster="assets/img/research-cavity-poster.jpg" preload="metadata"><source src="assets/media/cavity-helicity.mp4" type="video/mp4"/></video>
+<figcaption>Helical structures in the fully three-dimensional open cavity flow, after its successive bifurcations (JFM 2018).</figcaption>
+</figure><p class="oneliner">One toolbox behind everything above: base states, eigenmodes, adjoints, optimal perturbations, bifurcations.</p><p class="collab"><b>With</b> Jean-Christophe Robinet and Stefania Cherubini (DynFluid, Arts et Métiers), Jean-Christophe Loiseau, François Lusseyran and Luc Pastur (open cavity), Michele Alessandro Bucci, David Fabre, Franck Plouraboué and Christophe Airiau (IMFT, Toulouse), Pier Giuseppe Ledda (Cagliari).</p><details><summary>Read more</summary><p>Everything on this page is a stability problem in disguise. Start from a steady <b>base state</b> — a laminar channel, a cavity flow, a suspension at rest with its cells piled under the surface, a gas pocket at equilibrium — and add a small perturbation. The <b>linearised equations</b> say whether it grows: an eigenvalue with positive real part, the wavelength and frequency of the growing mode, and its shape. In a <b>global</b> analysis the base flow is fully two- or three-dimensional and the eigenproblem is solved numerically, by Arnoldi iterations on a time-stepper (Nek5000) or with finite elements (FreeFem++/StabFem). <b>Adjoint</b> modes give receptivity and sensitivity — where a small change in the problem changes the answer most. When the linear picture is not enough, <b>nonlinear optimal perturbations</b> (a variational, adjoint-based optimisation) find the smallest disturbance that trips the flow, and continuation follows the branches through the <b>sequence of bifurcations</b>, up to transition.</p><p>Where the coupling enters, so far: a slip or textured wall (<a href="#transition">transition</a> in channels with superhydrophobic walls); a fully three-dimensional open cavity and its successive bifurcations, compared with experiments (<a href="publications.html#jfm2018">JFM 2018</a>); the receptivity of a boundary layer to free-stream disturbances, mimicked by a synthetic forcing (<a href="publications.html#jcp2019">JCP 2019</a>); an electric field — the ionic wind of a corona discharge, a coupled electro-hydrodynamic problem (<a href="#ehd">plasma thrusters</a>); a chemical field around a <a href="#active">phoretic particle</a>; a moving or deformable boundary (ALE and embedded-boundary formulations, fluid–structure interaction); and a swimming population, in <a href="#bioconvection">bioconvection</a>.</p><div class="figs"><figure class="fig">
+<img alt="Sketch: the Navier–Stokes fluid coupled one-way or two-way to complex boundaries, free surfaces, electromagnetism and chemistry; future: turbulence, fluid–structure interaction, acoustics, combustion" loading="lazy" src="assets/img/coupled-dynamics.png"/>
+<figcaption>Different subjects, a similar approach: the fluid, coupled one-way or two-way to a boundary, a free surface, an electric field, a chemical field — and the couplings still to come.</figcaption>
+</figure><figure class="fig">
+<img alt="Sketch of the successive bifurcations of the open cavity flow as the Reynolds number increases" loading="lazy" src="assets/img/cavity-bifurcations.png"/>
+<figcaption>The sequence of bifurcations of the open cavity flow as <i>Re</i> increases, sketched: no Taylor–Görtler vortices, then steady ones (<i>Re<sub>C1</sub></i>), then unsteady ones (<i>Re<sub>C2</sub></i>).</figcaption>
+</figure></div></details></article>
 <!-- ============ BASILISK ============ -->
-  <article class="project" id="basilisk">
-    <div class="project-text">
-      <h3>Tools, in Basilisk — building blocks for the stability of coupled flows</h3>
-      <p class="tag">open source · <a href="https://basilisk.fr/sandbox/fpicella/README">my sandbox on basilisk.fr</a></p>
-      <p><a href="https://basilisk.fr/">Basilisk</a> is the free solver for partial differential equations on adaptive grids developed at ∂'Alembert by Stéphane Popinet. Its wiki, the <i>sandbox</i>, is where users publish their code, with the results compiled and run on the server: every page is a reproducible test case. I use Basilisk to put the <b>coupled flows</b> above into one framework, and I <b>develop the tools their stability analysis needs</b> — then share them so that students and colleagues can build on them.</p>
-      <div class="toolbox">
-        <div><b>Moving embedded boundaries</b> Forces and torques on bodies that move with the flow (re-adapted from A. Ghigo's implementation): sedimenting, force- and torque-free cylinders in shear flow.</div>
-        <div><b>Slip and Robin conditions</b> Navier slip on embedded geometries, and Robin conditions with A. Palotai and M. Walmetz — the wall model of <a href="#ushs">U-SHS</a>. Validated against Legendre <i>et al.</i> 2009.</div>
-        <div><b>Plastron</b> A cylinder wrapped in a gas bubble, a notched cylinder holding a bubble: two-phase flow around a superhydrophobic body.</div>
-        <div><b>tHree swimmers</b> A three-force model of a microswimmer: single swimmer, phototaxis in a light gradient, fingering, and <a href="#bioconvection">bioconvection</a> plumes.</div>
-        <div><b>Selective frequency damping</b> Unstable base states for a stability analysis (Åkervik <i>et al.</i> 2006): Kármán street, sphere wake, Kelvin–Helmholtz — by <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>. <span class="badge">picture of the month</span></div>
-        <div><b>Two-phase flow on embedded boundaries</b> Contact angles, contact points and their velocities tracked on an embedded wall; capillary rise with Navier slip, sessile drops — by <a href="https://basilisk.fr/sandbox/jmerrifield/README">Jordan Merrifield</a> with Mathilde Tavares.</div>
-        <div><b>Validation and pedagogy</b> A quantitative Kármán test (drag, lift, Strouhal number against the literature), a darcs tutorial, 1D advection–diffusion, an instrumented plane Couette flow.</div>
-      </div>
-      <p class="collab"><b>With</b> the students of the <a href="positions.html#alumni">alumni</a> page, each with a sandbox of their own: <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>, <a href="https://basilisk.fr/sandbox/walmetz/README">Malo Walmetz</a>, <a href="https://basilisk.fr/sandbox/jmerrifield/README">Jordan Merrifield</a>, <a href="https://basilisk.fr/sandbox/apalotai/README">Ambre Palotai</a>; Antoine Hajczak, Jean-Christophe Robinet and Mathilde Tavares, who co-supervised them; Arthur Ghigo (embedded boundaries); Stéphane Popinet (∂'Alembert).</p>
-    </div>
-    <div class="project-figs">
-      <figure class="fig">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/img/basilisk-fingering-poster.jpg" aria-label="Animation: fingering instability of a suspension of microswimmers simulated with Basilisk"><source src="assets/media/basilisk-fingering.mp4" type="video/mp4"></video>
-        <figcaption><b>Fingering.</b> 64 <i>tHree</i> pullers in a periodic box, Stokes flow: the regular lattice breaks into fingers (vorticity in colour, swimmers in black, velocity vectors). From <a href="https://basilisk.fr/sandbox/fpicella/microswimmer_tHree_forces/fingering.c">fingering.c</a> on my sandbox, where the full-resolution movie runs.</figcaption>
-      </figure>
-    </div>
-  </article>
-
+<article class="project" id="basilisk"><h3>Tools, in Basilisk — building blocks for the stability of coupled flows</h3><p class="tag">open source · <a href="https://basilisk.fr/sandbox/fpicella/README">my sandbox on basilisk.fr</a></p><figure class="hero-media square">
+<video aria-label="Animation: fingering instability of a suspension of microswimmers simulated with Basilisk" autoplay="" loop="" muted="" playsinline="" poster="assets/img/basilisk-fingering-poster.jpg" preload="metadata"><source src="assets/media/basilisk-fingering.mp4" type="video/mp4"/></video>
+<figcaption><b>Fingering.</b> 64 <i>tHree</i> pullers in a periodic box, Stokes flow: the regular lattice breaks into fingers (vorticity in colour, swimmers in black, velocity vectors). From <a href="https://basilisk.fr/sandbox/fpicella/microswimmer_tHree_forces/fingering.c">fingering.c</a> on my sandbox, where the full-resolution movie runs.</figcaption>
+</figure><p class="oneliner">Open-source building blocks for the stability of coupled flows, written with my students.</p><p class="collab"><b>With</b> the students of the <a href="positions.html#alumni">alumni</a> page, each with a sandbox of their own: <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>, <a href="https://basilisk.fr/sandbox/walmetz/README">Malo Walmetz</a>, <a href="https://basilisk.fr/sandbox/jmerrifield/README">Jordan Merrifield</a>, <a href="https://basilisk.fr/sandbox/apalotai/README">Ambre Palotai</a>; Antoine Hajczak, Jean-Christophe Robinet and Mathilde Tavares, who co-supervised them; Arthur Ghigo (embedded boundaries); Stéphane Popinet (∂'Alembert).</p><details><summary>Read more</summary><p><a href="https://basilisk.fr/">Basilisk</a> is the free solver for partial differential equations on adaptive grids developed at ∂'Alembert by Stéphane Popinet. Its wiki, the <i>sandbox</i>, is where users publish their code, with the results compiled and run on the server: every page is a reproducible test case. I use Basilisk to put the <b>coupled flows</b> above into one framework, and I <b>develop the tools their stability analysis needs</b> — then share them so that students and colleagues can build on them.</p><div class="toolbox">
+<div><b>Moving embedded boundaries</b> Forces and torques on bodies that move with the flow (re-adapted from A. Ghigo's implementation): sedimenting, force- and torque-free cylinders in shear flow.</div>
+<div><b>Slip and Robin conditions</b> Navier slip on embedded geometries, and Robin conditions with A. Palotai and M. Walmetz — the wall model of <a href="#ushs">U-SHS</a>. Validated against Legendre <i>et al.</i> 2009.</div>
+<div><b>Plastron</b> A cylinder wrapped in a gas bubble, a notched cylinder holding a bubble: two-phase flow around a superhydrophobic body.</div>
+<div><b>tHree swimmers</b> A three-force model of a microswimmer: single swimmer, phototaxis in a light gradient, fingering, and <a href="#bioconvection">bioconvection</a> plumes.</div>
+<div><b>Selective frequency damping</b> Unstable base states for a stability analysis (Åkervik <i>et al.</i> 2006): Kármán street, sphere wake, Kelvin–Helmholtz — by <a href="https://basilisk.fr/sandbox/gally/README">Louise Gally</a>. <span class="badge">picture of the month</span></div>
+<div><b>Two-phase flow on embedded boundaries</b> Contact angles, contact points and their velocities tracked on an embedded wall; capillary rise with Navier slip, sessile drops — by <a href="https://basilisk.fr/sandbox/jmerrifield/README">Jordan Merrifield</a> with Mathilde Tavares.</div>
+<div><b>Validation and pedagogy</b> A quantitative Kármán test (drag, lift, Strouhal number against the literature), a darcs tutorial, 1D advection–diffusion, an instrumented plane Couette flow.</div>
+</div></details></article>
 </section>
-
 </main>
-
-<footer class="wrap">
-  <a class="portrait small" href="index.html" aria-label="Home"><img src="assets/img/portrait.jpg" alt="" width="56" height="56"></a>
-  <p>© 2026 Francesco Picella · <a href="index.html#contact">contact</a> · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p>
-</footer>
-
+<footer class="wrap"><p>© 2026 Francesco Picella · Institut ∂'Alembert, Sorbonne Université</p><p><a href="index.html#contact">contact</a> · <a href="#top">top ↑</a> · <a href="https://github.com/fpicella/fpicella.github.io">source</a></p></footer>
 </body>
 </html>
